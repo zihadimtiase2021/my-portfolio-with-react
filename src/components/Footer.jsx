@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { FaRegCopyright } from "react-icons/fa";
 import { footerLinks } from "../utils/constants";
 
 export const Footer = () => {
@@ -36,19 +35,18 @@ export const Footer = () => {
         </div>
         {/* <!-- cpoyright --> */}
         <div className="text-base flex items-center gap-2">
-          <FaRegCopyright />
-          <p>
-            <span ref={timeRef}>copyright time</span> Copyright by Web Banai |
-            Developed by
+          <p className="text-center">
+            ©️<span ref={timeRef}>copyright time</span> Copyright by Web Banai |
+            Developed by {""}
+            <a
+              href="https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/"
+              target="_blank"
+              className="text-themeColor hover:text-secondThemeColor hover:underline"
+              rel="noreferrer"
+            >
+              Zihad Imtiase
+            </a>
           </p>
-          <a
-            href="https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/"
-            target="_blank"
-            className="text-themeColor hover:text-secondThemeColor hover:underline"
-            rel="noreferrer"
-          >
-            Zihad Imtiase
-          </a>
         </div>
       </div>
     </footer>

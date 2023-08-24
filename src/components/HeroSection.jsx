@@ -2,9 +2,19 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { coverPhoto, dp } from "../assets";
-import { filteringNav, slogan, status, title } from "../utils/constants";
+import { useGlobalContext } from "../context/appContext";
+import {
+  filteringNav,
+  message,
+  slogan,
+  status,
+  title,
+} from "../utils/constants";
 
 const HeroSection = () => {
+  //get params value
+  const { params } = useGlobalContext();
+
   //target the filter nav
   const listRef = useRef();
 
@@ -37,23 +47,30 @@ const HeroSection = () => {
         </div>
         {/* <!-- cover-photo --> */}
 
-        <div className="my-container absolute top-[68%] left-0 right-0 md:top-[55%]">
+        <div className="my-container absolute top-[55%] left-0 right-0 ">
           {/* <!-- first --> */}
           <div className="flex justify-between items-end mb-4">
-            <div className="w-[100px] h-[100px] rounded-full border-[5px] overflow-hidden border-white dark:border-myDark md:w-[200px] md:h-[200px]">
+            <div className="w-[120px] h-[120px] rounded-full border-[5px] overflow-hidden border-white dark:border-myDark md:w-[200px] md:h-[200px]">
               {/* <!-- profile-photo --> */}
               <img className="w-full h-auto" src={dp} alt="hero" />
             </div>
-            <p className="bg-themeColor text-white py-[6px] px-4 rounded-3xl mb-1 cursor-pointer transition hover:bg-secondThemeColor">
-              Direct Message <i className="fa-solid fa-comment-dots"></i>
-            </p>
+            <a
+              href={message.link}
+              target="_blank"
+              className="bg-themeColor text-white py-[6px] px-4 rounded-3xl mb-1 cursor-pointer transition hover:bg-secondThemeColor flex items-center gap-1"
+              rel="noreferrer"
+            >
+              {message.icon} {message.text}
+            </a>
           </div>
           {/* <!-- second --> */}
           <h1 className="font-bold text-2xl mb-2 md:text-[34px]">
             Zihad Imtiase Munna
           </h1>
-          <p className="mb-2">{title}</p>
-          <p className="text-[14px] mb-4">{slogan}</p>
+          {/* title */}
+          <p className="mb-2 text-sm md:text-base">{title}</p>
+          {/* slogan */}
+          <p className="text-[14px] mb-4 text-myGray">{slogan}</p>
           <div className="flex flex-col gap-1 text-myGray md:flex-row md:gap-5">
             {/* get-the-stauts */}
             {status.map(item => (
@@ -84,7 +101,7 @@ const HeroSection = () => {
       </section>
       {/* top-section-end */}
       {/* filtering-navbar */}
-      <section className="filter-section my-container mb-[25px!important] mt-[21rem!important] md:mt-[18rem!important]">
+      <section className="filter-section my-container mb-[40px!important] mt-[26rem!important] md:mt-[19rem!important]">
         {/* <!-- filtering navbar --> */}
         <ul
           ref={listRef}
@@ -97,11 +114,11 @@ const HeroSection = () => {
               to={item.link}
               onClick={e => handleActive(e)}
               className={`hover:bg-[#F1F3F5] dark:hover:bg-[#212529] w-full py-[11px] flex justify-center ${
-                item.active ? "active" : null
+                item.item == params ? "active" : null
               }`}
             >
               <p className="font-bold">
-                <span className="child py-2 px-2 border-b-4 border-transparent md:px-4">
+                <span className="child py-2 px-2 border-b-4 border-transparent capitalize md:px-4">
                   {item.item}
                 </span>
               </p>

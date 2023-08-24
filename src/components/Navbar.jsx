@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { logo } from "../assets";
 
 export const Navbar = () => {
@@ -45,9 +46,9 @@ export const Navbar = () => {
       {/* <!-- navbar --> */}
       <nav className="max-w-[1300px] mx-auto flex justify-between items-center px-4 py-2">
         {/* <!-- logo --> */}
-        <a href="#" className="font-bold text-[25px] flex space-x-4">
+        <Link to={"/"} className="font-bold text-[25px] flex space-x-4">
           <img src={logo} className="w-[65px] md:w-20" alt="logo" />
-        </a>
+        </Link>
         {/* <!-- dark-mode-toggler --> */}
         <div
           onClick={themeSwitch}

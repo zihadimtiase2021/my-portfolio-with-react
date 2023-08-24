@@ -1,4 +1,5 @@
 import { BiWorld } from "react-icons/bi";
+import { BsInstagram } from "react-icons/bs";
 import {
   FaBriefcase,
   FaFacebook,
@@ -9,7 +10,7 @@ import {
   FaSchool,
   FaWhatsapp,
 } from "react-icons/fa6";
-import { SiLinkedin } from "react-icons/si";
+import { SiFreelancer, SiLinkedin } from "react-icons/si";
 import {
   css,
   dp2,
@@ -32,7 +33,9 @@ import {
   tailwind,
 } from "../assets";
 
-export const slogan = ["Bringing ideas to life with code!✨"];
+export const slogan = [
+  "Talks about #frontend web development, #react.js,  #landingpage, #webdesigning, #webdesignservices, and #conversionrateoptimization",
+];
 export const title = [
   "Coding the Future of Your Business | Frontend Web Developer | Web Developer",
 ];
@@ -47,11 +50,17 @@ export const status = [
   { icon: <FaLocationDot />, text: "Joined March 2022" },
 ];
 
+export const message = {
+  text: "Message",
+  icon: <FaWhatsapp />,
+  link: "https://wa.me/01728964769",
+};
+
 export const filteringNav = [
-  { item: "Feed", link: "/", active: "active" },
-  { item: "About", link: "about" },
-  { item: "Portfolio", link: "portfolio" },
-  { item: "Contact", link: "contact" },
+  { item: "feed", link: "/" },
+  { item: "about", link: "about" },
+  { item: "portfolio", link: "portfolio" },
+  { item: "contact", link: "contact" },
 ];
 
 export const about = [
@@ -94,8 +103,8 @@ export const reviews = [
     reviewImg: review5,
     date: "01 August 2023·",
     timeIcon: <BiWorld />,
-    lickIcon: <FaLink />,
-    link: "https://www.linkedin.com/",
+    linkIcon: <FaLink />,
+    link: "https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/",
     content: `"🎉 Happy Client, Happy Me! 🌟 Just received the most amazing feedback from one of my client, and I couldn't be more thrilled! 🙌💖"`,
   },
   {
@@ -103,8 +112,8 @@ export const reviews = [
     reviewImg: review1,
     date: "14 February 2023·",
     timeIcon: <BiWorld />,
-    lickIcon: <FaLink />,
-    link: "https://www.linkedin.com/",
+    linkIcon: <FaLink />,
+    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
     content: `"It's always a joy to receive feedback from happy clients like you! I am thrilled that I could meet your expectations and provide you with a great experience. Thank you for your trust and support, and I look forward to serving you again soon!"`,
   },
   {
@@ -112,8 +121,8 @@ export const reviews = [
     reviewImg: review2,
     date: "30 December 2022·",
     timeIcon: <BiWorld />,
-    lickIcon: <FaLink />,
-    link: "https://www.linkedin.com/",
+    linkIcon: <FaLink />,
+    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
     content: `"I am thrilled to have delivered the results you were looking for and to have helped you achieve your project goals. Thank you for your positive feedback. I am look forward to working with you again in the future!"`,
   },
   {
@@ -121,8 +130,8 @@ export const reviews = [
     reviewImg: review3,
     date: "21 December 2022·",
     timeIcon: <BiWorld />,
-    lickIcon: <FaLink />,
-    link: "https://www.linkedin.com/",
+    linkIcon: <FaLink />,
+    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
     content: `"I love working with clients like you who appreciate our dedication to providing high-quality freelancer services. Thank you for your trust and for sharing your positive experience with others."`,
   },
   {
@@ -130,8 +139,8 @@ export const reviews = [
     reviewImg: review4,
     date: "30 October 2022·",
     timeIcon: <BiWorld />,
-    lickIcon: <FaLink />,
-    link: "https://www.linkedin.com/",
+    linkIcon: <FaLink />,
+    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
     content: `"Another happy client, another reason to celebrate! Thank you for your kind words and for trusting. I am thrilled to have exceeded your expectations!"`,
   },
 ];
@@ -143,14 +152,24 @@ export const footerLinks = [
     link: "https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/",
   },
   {
+    name: "Instagram",
+    icon: <BsInstagram />,
+    link: "",
+  },
+  {
     name: "Whatsapp",
     icon: <FaWhatsapp />,
-    link: " https://wa.me/01728964769",
+    link: "https://wa.me/01728964769",
   },
   {
     name: "Github",
     icon: <FaGithub />,
     link: "https://github.com/zihadimtiase2021",
+  },
+  {
+    name: "Freelancer",
+    icon: <SiFreelancer />,
+    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
   },
   {
     name: "Facebook",
