@@ -2,15 +2,16 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useGlobalContext } from "../context/appContext";
 
-export const About = () => {
-  const { params, setparams } = useGlobalContext();
+const About = () => {
+  const { setparams } = useGlobalContext();
   const { about } = useParams();
 
   useEffect(() => {
     setparams(about);
   }, [about, setparams]);
 
-  // console.log(params);
+  console.log(about);
 
   return <div>About</div>;
 };
+export default About;

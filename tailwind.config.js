@@ -23,6 +23,7 @@ export default {
         whiteHover: "#F1F3F5",
         themeColor: "#E8A698",
         secondThemeColor: "#ffb4a7",
+        myWhite: "#f1f3f573",
       },
     },
     keyframes: {

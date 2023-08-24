@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { footerLinks } from "../utils/constants";
 
-export const Footer = () => {
+const Footer = () => {
   const timeRef = useRef();
 
   useEffect(() => {
@@ -52,3 +52,4 @@ export const Footer = () => {
     </footer>
   );
 };
+export default Footer;

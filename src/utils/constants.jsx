@@ -13,6 +13,7 @@ import {
 import { SiFreelancer, SiLinkedin } from "react-icons/si";
 import {
   css,
+  dp,
   dp2,
   html,
   js,
@@ -29,7 +30,6 @@ import {
   review3,
   review4,
   review5,
-  reviewDP,
   tailwind,
 } from "../assets";
 
@@ -99,7 +99,7 @@ export const resume = {
 
 export const reviews = [
   {
-    img: reviewDP,
+    img: dp,
     reviewImg: review5,
     date: "01 August 2023·",
     timeIcon: <BiWorld />,
@@ -108,7 +108,7 @@ export const reviews = [
     content: `"🎉 Happy Client, Happy Me! 🌟 Just received the most amazing feedback from one of my client, and I couldn't be more thrilled! 🙌💖"`,
   },
   {
-    img: reviewDP,
+    img: dp,
     reviewImg: review1,
     date: "14 February 2023·",
     timeIcon: <BiWorld />,
@@ -117,7 +117,7 @@ export const reviews = [
     content: `"It's always a joy to receive feedback from happy clients like you! I am thrilled that I could meet your expectations and provide you with a great experience. Thank you for your trust and support, and I look forward to serving you again soon!"`,
   },
   {
-    img: reviewDP,
+    img: dp,
     reviewImg: review2,
     date: "30 December 2022·",
     timeIcon: <BiWorld />,
@@ -126,7 +126,7 @@ export const reviews = [
     content: `"I am thrilled to have delivered the results you were looking for and to have helped you achieve your project goals. Thank you for your positive feedback. I am look forward to working with you again in the future!"`,
   },
   {
-    img: reviewDP,
+    img: dp,
     reviewImg: review3,
     date: "21 December 2022·",
     timeIcon: <BiWorld />,
@@ -135,7 +135,7 @@ export const reviews = [
     content: `"I love working with clients like you who appreciate our dedication to providing high-quality freelancer services. Thank you for your trust and for sharing your positive experience with others."`,
   },
   {
-    img: reviewDP,
+    img: dp,
     reviewImg: review4,
     date: "30 October 2022·",
     timeIcon: <BiWorld />,

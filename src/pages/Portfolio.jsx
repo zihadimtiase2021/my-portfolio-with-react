@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useGlobalContext } from "../context/appContext";
 
-export const Portfolio = () => {
-  const { params, setparams } = useGlobalContext();
+const Portfolio = () => {
+  const { setparams } = useGlobalContext();
   const { portfolio } = useParams();
 
   useEffect(() => {
@@ -14,3 +14,4 @@ export const Portfolio = () => {
 
   return <div>Portfolio</div>;
 };
+export default Portfolio;
