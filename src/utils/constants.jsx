@@ -12,9 +12,9 @@ import {
 } from "react-icons/fa6";
 import { SiFreelancer, SiLinkedin } from "react-icons/si";
 import {
+  aboutImg,
   css,
   dp,
-  dp2,
   html,
   js,
   lottie,
@@ -65,10 +65,33 @@ export const filteringNav = [
 
 export const about = [
   {
-    img: dp2,
-    firstText: `I'm Zihad Imtiase (Munna). I'm a frontend web developer that thrives on bringing ideas to life with code!✨`,
-    secondtext: `Whether you need a new website from scratch or want to revamp your existing site, I am here to help. I understand the importance of keeping up with the latest design trends, as well as ensuring your website is optimized for search engines and accessibility standards. My goal is to provide you with a website that not only looks great but also functions seamlessly, with a user-friendly interface and intuitive navigation.`,
+    img: aboutImg,
   },
+  [
+    "I'm Zihad Imtiase (Munna) living in Dhaka, Bangladesh. I'm a frontend web developer that thrives on bringing ideas to life with code!✨",
+
+    "🤔Whether you need a new website from scratch or want to revamp your existing site? I am here to help you 🤗.",
+
+    "🌟Obtain a website that will increase your business by magnifying your online presence, capturing the attention of potential customers, ultimately driving exponential growth and propelling your brand to new heights of success.🌟",
+
+    "🌐 Elevate Your Brand Online with Tailored Web Solutions 🌐. By getting me in your team, you can expect:",
+
+    "🌐 Your Success, My Focus: From startups to established enterprises, my goal is to empower your digital journey. Anticipate websites that not only boast fantastic aesthetics but also propel your business toward progress.",
+
+    "✨You get a website that not only looks great but also works seamlessly with a user-friendly interface and intuitive navigation. ",
+
+    "🚀 Seamless User Experiences: Transforming intricate codes into intuitive interfaces, your website visitors will effortlessly navigate your platform, engaging seamlessly with your brand in meaningful interactions.",
+
+    "🌐 Mobile-First Approach: Your online presence will be optimized for every device. Expect a responsive and stunning design that ensures your message reaches users on the go.",
+
+    "🌟 Innovative Advantage: By embracing the latest technologies, crafted websites stand out from the crowd, positioning your brand as a forward-thinking industry leader.",
+
+    "📈 Performance that Impresses: Speed, efficiency, and reliability are the hallmarks of my work. Your website will be optimized for peak performance, keeping users engaged and satisfied.",
+
+    "💼 Enhanced Conversions: Your website extends beyond aesthetics it's a potent tool for driving results. Employing a user-focused strategy, together we'll amplify your conversions and attain your business objectives.",
+
+    "💡 Solutions tailored to you: Recognizing the uniqueness of each project, a web solution that seamlessly aligns with your brand identity, purpose and target audience.",
+  ],
 ];
 
 export const resume = {

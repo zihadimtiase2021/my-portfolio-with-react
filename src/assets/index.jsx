@@ -4,6 +4,7 @@ import popUp3 from "./img/Portfolio-popup/portfolio3popup.webp";
 import popUp4 from "./img/Portfolio-popup/portfolio4popup.webp";
 import popUp5 from "./img/Portfolio-popup/portfolio5popup.webp";
 import popUp6 from "./img/Portfolio-popup/portfolio6popup.webp";
+import aboutImg from "./img/about.jpg";
 import coverPhoto from "./img/cover-photo.webp";
 import dp2 from "./img/dp-2.webp";
 import reviewDP from "./img/dp.webp";
@@ -29,6 +30,7 @@ import transparentDp from "./img/transparent-dp.png";
 import logo from "./img/web-banai-logo.webp";
 
 export {
+  aboutImg,
   coverPhoto,
   css,
   dp,
