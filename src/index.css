@@ -32,7 +32,7 @@
   @apply block;
 }
 .footer-icon {
-  @apply h-12 w-12 rounded-md text-2xl flex justify-center items-center hover:bg-[#DEE2E6] dark:hover:bg-[#495057];
+  @apply h-12 w-12 rounded-md text-2xl flex justify-center items-center hover:bg-themeSoftColor dark:hover:bg-themeSoftColor;
 }
 .for-hover {
   @apply relative flex justify-center w-full h-full overflow-hidden;
@@ -99,4 +99,13 @@
 }
 .active .submited-popup {
   @apply opacity-100 top-0;
+}
+
+::selection {
+  @apply bg-themeColor text-white;
+}
+
+/* Fallback for older browsers */
+::-moz-selection {
+  @apply bg-themeColor text-white;
 }

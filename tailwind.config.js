@@ -22,6 +22,7 @@ export default {
         darkHover: "#212529",
         whiteHover: "#F1F3F5",
         themeColor: "#E8A698",
+        themeSoftColor: "#e8a6983b",
         secondThemeColor: "#ffb4a7",
         myWhite: "#f1f3f573",
       },

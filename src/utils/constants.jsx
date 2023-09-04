@@ -98,7 +98,7 @@ export const resume = {
   exprience: {
     title: "Web Development",
     status: "At Freelancer : 2022 - Running",
-    content: "I have been working as a freelancer since 2022",
+    content: "I have been working as a <br /> freelancer since 2022",
     icon: <FaBriefcase />,
   },
   education: {
@@ -112,7 +112,7 @@ export const resume = {
     ssc: {
       title: "SSC",
       status:
-        "Dhaka Cantonment Board Adarsha Biddyaniketon, Manikdi - 2009 - 2020",
+        "Dhaka Cantonment Board Adarsha Biddyaniketon, <br/> Manikdi - 2009 - 2020",
       content:
         "This school was my first education institute. I have passed my most of the valueable time of my life in my school.",
       icon: <FaSchool />,
