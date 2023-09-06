@@ -34,7 +34,6 @@ const About = () => {
                 effect="blur"
                 className="w-full rounded-lg rotate-[5deg]"
                 src={about[0].img}
-                loading="lazy"
                 alt="zihad"
               />
               <div className="absolute h-full w-full bg-themeColor rounded-lg top-0 left-0 -z-[1] "></div>

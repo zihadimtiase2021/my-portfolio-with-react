@@ -30,7 +30,6 @@ const Feed = () => {
                     effect="blur"
                     className="h-[50px] w-[50px] rounded-full"
                     src={img}
-                    loading="lazy"
                     alt="dp"
                   />
                 </a>
@@ -55,7 +54,6 @@ const Feed = () => {
                 effect="blur"
                 className="w-full h-auto"
                 src={reviewImg}
-                loading="lazy"
                 alt="review"
               />
               {/* <!-- post-image end --> */}
