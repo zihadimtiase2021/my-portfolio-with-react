@@ -46,7 +46,12 @@ const HeroSection = () => {
       <section className="container p-[0px] relative">
         {/* <!-- cover-photo --> */}
         <div className="w-full h-[150px] flex items-center justify-center overflow-hidden md:h-[240px]">
-          <LazyLoadImage effect="blur" src={coverPhoto} alt="coverPhoto" />
+          <LazyLoadImage
+            effect="blur"
+            src={coverPhoto}
+            alt="coverPhoto"
+            defaultChecked
+          />
         </div>
         {/* <!-- cover-photo --> */}
 
@@ -60,6 +65,7 @@ const HeroSection = () => {
                 className="w-full h-auto"
                 src={dp}
                 alt="hero"
+                defaultChecked
               />
             </div>
             <a

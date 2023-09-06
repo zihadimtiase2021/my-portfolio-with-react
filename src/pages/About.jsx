@@ -35,6 +35,7 @@ const About = () => {
                 className="w-full rounded-lg rotate-[5deg]"
                 src={about[0].img}
                 alt="zihad"
+                defaultChecked
               />
               <div className="absolute h-full w-full bg-themeColor rounded-lg top-0 left-0 -z-[1] "></div>
             </div>

@@ -31,6 +31,7 @@ const Feed = () => {
                     className="h-[50px] w-[50px] rounded-full"
                     src={img}
                     alt="dp"
+                    defaultChecked
                   />
                 </a>
               </div>
@@ -55,6 +56,7 @@ const Feed = () => {
                 className="w-full h-auto"
                 src={reviewImg}
                 alt="review"
+                defaultChecked
               />
               {/* <!-- post-image end --> */}
             </div>
