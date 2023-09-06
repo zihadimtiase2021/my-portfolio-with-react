@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef } from "react";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { Link } from "react-router-dom";
 import { coverPhoto, dp } from "../assets";
 import { useGlobalContext } from "../context/appContext";
@@ -10,6 +11,8 @@ import {
   status,
   title,
 } from "../utils/constants";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const HeroSection = () => {
   //get params value
@@ -52,7 +55,12 @@ const HeroSection = () => {
           <div className="flex justify-between items-end mb-4">
             <div className="w-[120px] h-[120px] rounded-full border-[5px] overflow-hidden border-white dark:border-myDark md:w-[200px] md:h-[200px]">
               {/* <!-- profile-photo --> */}
-              <img className="w-full h-auto" src={dp} alt="hero" />
+              <LazyLoadImage
+                effect="blur"
+                className="w-full h-auto"
+                src={dp}
+                alt="hero"
+              />
             </div>
             <a
               href={message.link}
