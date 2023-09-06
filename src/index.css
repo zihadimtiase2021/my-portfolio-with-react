@@ -109,3 +109,9 @@
 ::-moz-selection {
   @apply bg-themeColor text-white;
 }
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  @apply w-full;
+}
+.lazy-load-image-background.blur {
+  @apply blur-[2px];
+}

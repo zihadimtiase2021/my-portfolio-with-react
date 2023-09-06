@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+
 import { useGlobalContext } from "../context/appContext";
 import { about, resume } from "../utils/constants";
 const About = () => {

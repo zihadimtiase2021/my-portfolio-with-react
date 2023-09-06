@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef } from "react";
-import "react-lazy-load-image-component/src/effects/blur.css";
+
 import { Link } from "react-router-dom";
 import { coverPhoto, dp } from "../assets";
 import { useGlobalContext } from "../context/appContext";
@@ -46,7 +46,7 @@ const HeroSection = () => {
       <section className="container p-[0px] relative">
         {/* <!-- cover-photo --> */}
         <div className="w-full h-[150px] flex items-center justify-center overflow-hidden md:h-[240px]">
-          <img src={coverPhoto} alt="coverPhoto" />
+          <LazyLoadImage effect="blur" src={coverPhoto} alt="coverPhoto" />
         </div>
         {/* <!-- cover-photo --> */}
 

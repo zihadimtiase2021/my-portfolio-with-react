@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useGlobalContext } from "../context/appContext";
 import { reviews } from "../utils/constants";
 
@@ -25,7 +26,8 @@ const Feed = () => {
               {/* <!-- dp-image --> */}
               <div>
                 <a href="#">
-                  <img
+                  <LazyLoadImage
+                    effect="blur"
                     className="h-[50px] w-[50px] rounded-full"
                     src={img}
                     loading="lazy"
@@ -49,7 +51,8 @@ const Feed = () => {
             <div className="mb-[14px]">
               {/* <!-- post-image & caption --> */}
               <p className="text-base mb-4 px-4 md:px-6">{content}</p>
-              <img
+              <LazyLoadImage
+                effect="blur"
                 className="w-full h-auto"
                 src={reviewImg}
                 loading="lazy"
