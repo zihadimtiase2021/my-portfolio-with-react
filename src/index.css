@@ -109,9 +109,38 @@
 ::-moz-selection {
   @apply bg-themeColor text-white;
 }
-.lazy-load-image-background.blur.lazy-load-image-loaded {
-  @apply w-full;
+
+.blur-load {
+  @apply bg-cover bg-center bg-no-repeat relative;
 }
-.lazy-load-image-background.blur {
-  @apply blur-[2px];
+
+.blur-load::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: pulse 2.5s infinite;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.blur-load.loaded::before {
+  content: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.blur-load.loaded > img {
+  @apply opacity-100;
+}
+.blur-load > img {
+  @apply opacity-0 transition-opacity duration-200 ease-in-out;
 }

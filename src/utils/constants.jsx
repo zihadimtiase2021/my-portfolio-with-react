@@ -15,6 +15,7 @@ import {
   aboutImg,
   css,
   dp,
+  dp_small,
   html,
   js,
   lottie,
@@ -26,10 +27,12 @@ import {
   portfolio5,
   portfolio6,
   review1,
+  review1_small,
   review2,
   review3,
   review4,
   review5,
+  review5_small,
   tailwind,
 } from "../assets";
 
@@ -122,8 +125,10 @@ export const resume = {
 
 export const reviews = [
   {
-    img: dp,
+    DP: dp,
+    DpPlaceholder: dp_small,
     reviewImg: review5,
+    placeholder: review5_small,
     date: "01 August 2023·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
@@ -131,8 +136,10 @@ export const reviews = [
     content: `"🎉 Happy Client, Happy Me! 🌟 Just received the most amazing feedback from one of my client, and I couldn't be more thrilled! 🙌💖"`,
   },
   {
-    img: dp,
+    DP: dp,
+    DpPlaceholder: dp_small,
     reviewImg: review1,
+    placeholder: review1_small,
     date: "14 February 2023·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
@@ -140,8 +147,10 @@ export const reviews = [
     content: `"It's always a joy to receive feedback from happy clients like you! I am thrilled that I could meet your expectations and provide you with a great experience. Thank you for your trust and support, and I look forward to serving you again soon!"`,
   },
   {
-    img: dp,
+    DP: dp,
+    DpPlaceholder: dp_small,
     reviewImg: review2,
+    placeholder: review1_small,
     date: "30 December 2022·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
@@ -149,8 +158,10 @@ export const reviews = [
     content: `"I am thrilled to have delivered the results you were looking for and to have helped you achieve your project goals. Thank you for your positive feedback. I am look forward to working with you again in the future!"`,
   },
   {
-    img: dp,
+    DP: dp,
+    DpPlaceholder: dp_small,
     reviewImg: review3,
+    placeholder: review1_small,
     date: "21 December 2022·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
@@ -158,8 +169,10 @@ export const reviews = [
     content: `"I love working with clients like you who appreciate our dedication to providing high-quality freelancer services. Thank you for your trust and for sharing your positive experience with others."`,
   },
   {
-    img: dp,
+    DP: dp,
+    DpPlaceholder: dp_small,
     reviewImg: review4,
+    placeholder: review1_small,
     date: "30 October 2022·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,

@@ -1,20 +1,52 @@
-import { useEffect } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { useEffect, useRef } from "react";
 import { useGlobalContext } from "../context/appContext";
+import useLazyLoadImages from "../customHooks/useLazyLoadImages";
 import { reviews } from "../utils/constants";
 
 const Feed = () => {
   const { setparams } = useGlobalContext();
 
+  const containerRef = useRef();
+
+  useLazyLoadImages(containerRef);
+
   useEffect(() => {
     setparams("feed");
   }, [setparams]);
 
+  // useEffect(() => {
+  //   const blurDivs = document.querySelectorAll(".blur-load");
+  //   console.log(blurDivs);
+  //   blurDivs.forEach(div => {
+  //     console.log(div);
+  //     const imgEl = div.querySelector("img");
+
+  //     function loaded() {
+  //       div.classList.add("loaded");
+  //     }
+
+  //     if (imgEl.complete) {
+  //       loaded();
+  //     } else {
+  //       imgEl.addEventListener("load", loaded);
+  //     }
+  //   });
+  // });
+
   return (
-    <div className="flex flex-col gap-8">
+    <div ref={containerRef} className="flex flex-col gap-8">
       {reviews.map((item, index) => {
-        const { img, reviewImg, date, timeIcon, linkIcon, link, content } =
-          item;
+        const {
+          DP,
+          DpPlaceholder,
+          placeholder,
+          reviewImg,
+          date,
+          timeIcon,
+          linkIcon,
+          link,
+          content,
+        } = item;
 
         return (
           <div
@@ -26,12 +58,11 @@ const Feed = () => {
               {/* <!-- dp-image --> */}
               <div>
                 <a href="#">
-                  <LazyLoadImage
-                    effect="blur"
+                  <img
                     className="h-[50px] w-[50px] rounded-full"
-                    src={img}
+                    src={DpPlaceholder}
+                    data-src={DP}
                     alt="dp"
-                    defaultChecked
                   />
                 </a>
               </div>
@@ -51,13 +82,16 @@ const Feed = () => {
             <div className="mb-[14px]">
               {/* <!-- post-image & caption --> */}
               <p className="text-base mb-4 px-4 md:px-6">{content}</p>
-              <LazyLoadImage
-                effect="blur"
-                className="w-full h-auto"
-                src={reviewImg}
+              {/* <div
+                className={`blur-load bg-[url(/src/assets/img/review/small.png)] `}
+              > */}
+              <img
+                className="w-full h-auto object-center object-cover "
+                src={placeholder}
+                data-src={reviewImg}
                 alt="review"
-                defaultChecked
               />
+              {/* </div> */}
               {/* <!-- post-image end --> */}
             </div>
             {/* <!-- post-content end --> */}

@@ -14,6 +14,9 @@ import js from "./img/icons/js.svg";
 import lottie from "./img/icons/lottie.svg";
 import tailwind from "./img/icons/tailwind.svg";
 import dp from "./img/new-dp2.webp";
+import review1_small from "./img/placeHolderImages/review1-small.webp";
+import review5_small from "./img/placeHolderImages/review5-small.webp";
+import dp_small from "./img/placeHolderImages/small-new-dp2.webp";
 import portfolio1 from "./img/portfolio/portfolio1.webp";
 import portfolio2 from "./img/portfolio/portfolio2.webp";
 import portfolio3 from "./img/portfolio/portfolio3.webp";
@@ -35,6 +38,7 @@ export {
   css,
   dp,
   dp2,
+  dp_small,
   html,
   js,
   logo,
@@ -53,10 +57,12 @@ export {
   portfolio6,
   postDp,
   review1,
+  review1_small,
   review2,
   review3,
   review4,
   review5,
+  review5_small,
   reviewDP,
   tailwind,
   transparentDp,
