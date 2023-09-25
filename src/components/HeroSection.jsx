@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
-import { coverPhoto, dp } from "../assets";
+import { coverPhoto, coverPhoto_small, dp, dp_small } from "../assets";
 import { useGlobalContext } from "../context/appContext";
+import useLazyLoadImages from "../customHooks/useLazyLoadImages";
 import {
   filteringNav,
   message,
@@ -12,6 +13,10 @@ import {
 } from "../utils/constants";
 
 const HeroSection = () => {
+  const containerRef = useRef();
+
+  useLazyLoadImages(containerRef);
+
   //get params value
   const { params } = useGlobalContext();
 
@@ -40,10 +45,10 @@ const HeroSection = () => {
   return (
     <>
       {/* top-section */}
-      <section className="container p-[0px] relative">
+      <section ref={containerRef} className="container p-[0px] relative">
         {/* <!-- cover-photo --> */}
         <div className="w-full h-[150px] flex items-center justify-center overflow-hidden md:h-[240px]">
-          <img src={coverPhoto} alt="coverPhoto" />
+          <img src={coverPhoto_small} data-src={coverPhoto} alt="coverPhoto" />
         </div>
         {/* <!-- cover-photo --> */}
 
@@ -52,7 +57,12 @@ const HeroSection = () => {
           <div className="flex justify-between items-end mb-4">
             <div className="w-[120px] h-[120px] rounded-full border-[5px] overflow-hidden border-white dark:border-myDark md:w-[200px] md:h-[200px]">
               {/* <!-- profile-photo --> */}
-              <img className="w-full h-auto" src={dp} alt="hero" />
+              <img
+                className="w-full h-auto"
+                src={dp_small}
+                data-src={dp}
+                alt="hero"
+              />
             </div>
             <a
               href={message.link}

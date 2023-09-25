@@ -14,6 +14,7 @@ import js from "./img/icons/js.svg";
 import lottie from "./img/icons/lottie.svg";
 import tailwind from "./img/icons/tailwind.svg";
 import dp from "./img/new-dp2.webp";
+import coverPhoto_small from "./img/placeHolderImages/cover-photo-small.webp";
 import review1_small from "./img/placeHolderImages/review1-small.webp";
 import review5_small from "./img/placeHolderImages/review5-small.webp";
 import dp_small from "./img/placeHolderImages/small-new-dp2.webp";
@@ -35,6 +36,7 @@ import logo from "./img/web-banai-logo.webp";
 export {
   aboutImg,
   coverPhoto,
+  coverPhoto_small,
   css,
   dp,
   dp2,
