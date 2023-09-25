@@ -5,7 +5,7 @@ const useLazyLoadImages = containerRef => {
     if (!containerRef.current) return;
 
     const images = containerRef.current.querySelectorAll("img");
-    console.log(images);
+    // console.log(images);
 
     let imageOptions = {};
 
