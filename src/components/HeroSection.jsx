@@ -48,7 +48,12 @@ const HeroSection = () => {
       <section ref={containerRef} className="container p-[0px] relative">
         {/* <!-- cover-photo --> */}
         <div className="w-full h-[150px] flex items-center justify-center overflow-hidden md:h-[240px]">
-          <img src={coverPhoto_small} data-src={coverPhoto} alt="coverPhoto" />
+          <img
+            className="w-full"
+            src={coverPhoto_small}
+            data-src={coverPhoto}
+            alt="coverPhoto"
+          />
         </div>
         {/* <!-- cover-photo --> */}
 
