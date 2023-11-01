@@ -38,8 +38,10 @@
   @apply relative flex justify-center w-full h-full overflow-hidden;
 }
 .hover-item {
-  @apply absolute top-[300px] w-full h-full bg-[#f1f3f581] dark:bg-[#21252981] transition-all duration-[0.4s] flex flex-col justify-center items-center cursor-pointer;
+  background: linear-gradient(125deg, #21252975, #ffb4a7);
+  @apply text-white absolute top-[1000px] w-full h-full  transition-all duration-[0.4s] flex flex-col justify-center items-center cursor-pointer;
 }
+/* bg-[#f1f3f581] dark:bg-[#21252981] */
 .for-hover:hover .hover-item {
   @apply top-[0%];
 }

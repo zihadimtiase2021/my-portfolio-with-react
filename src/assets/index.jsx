@@ -24,6 +24,8 @@ import portfolio3 from "./img/portfolio/portfolio3.webp";
 import portfolio4 from "./img/portfolio/portfolio4.webp";
 import portfolio5 from "./img/portfolio/portfolio5.webp";
 import portfolio6 from "./img/portfolio/portfolio6.webp";
+import portfolio7 from "./img/portfolio/portfolio7.webp";
+import portfolio8 from "./img/portfolio/portfolio8.webp";
 import postDp from "./img/post-dp.png";
 import review2 from "./img/review/review2.webp";
 import review3 from "./img/review/review3.webp";
@@ -57,6 +59,8 @@ export {
   portfolio4,
   portfolio5,
   portfolio6,
+  portfolio7,
+  portfolio8,
   postDp,
   review1,
   review1_small,

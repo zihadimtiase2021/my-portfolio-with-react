@@ -20,12 +20,15 @@ import {
   js,
   lottie,
   popUp1,
+  popUp2,
   portfolio1,
   portfolio2,
   portfolio3,
   portfolio4,
   portfolio5,
   portfolio6,
+  portfolio7,
+  portfolio8,
   review1,
   review1_small,
   review2,
@@ -214,12 +217,18 @@ export const footerLinks = [
   },
 ];
 export const portfolioItems = [
-  { category: "recent", img: portfolio1 },
-  { category: "recent", img: portfolio2 },
-  { category: "recent", img: portfolio3 },
-  { category: "recent", img: portfolio4 },
-  { category: "recent", img: portfolio5 },
-  { category: "recent", img: portfolio6 },
+  {
+    name: "Web Artist",
+    uses: "HTML, Tailwind.css, JS",
+    img: portfolio1,
+  },
+  { name: "M3t-konfigurator", uses: "HTML, CSS, JS", img: portfolio2 },
+  { name: "Graphics Freak", uses: "HTML, CSS, JS", img: portfolio3 },
+  { name: "React Quiz App", uses: "HTML, Tailwind.css, JS", img: portfolio4 },
+  { name: "DROHNE112", uses: "React.js, Tailwind.css", img: portfolio5 },
+  { name: "M8iT", uses: "HTML, Bootstrap, js", img: portfolio6 },
+  { name: "Glow Up", uses: "React.js, Tailwind.css", img: portfolio7 },
+  { name: "PsyCro", uses: "HTML, Tailwind.css", img: portfolio8 },
 ];
 
 export const portfolioPopUp = [
@@ -232,7 +241,15 @@ export const portfolioPopUp = [
     },
   },
   {
-    title: "bal Artist",
+    title: "M3t-konfigurator",
+    img: popUp2,
+    icons: {
+      icon: [html, css, js, tailwind, lottie],
+      title: ["asd", "asd", "asd", "asd", "asd"],
+    },
+  },
+  {
+    title: "Graphics Freak",
     img: popUp1,
     icons: {
       icon: [html, css, js, tailwind, lottie],
@@ -240,7 +257,39 @@ export const portfolioPopUp = [
     },
   },
   {
-    title: "bal Artist",
+    title: "React Quiz App",
+    img: popUp1,
+    icons: {
+      icon: [html, css, js, tailwind, lottie],
+      title: ["asd", "asd", "asd", "asd", "asd"],
+    },
+  },
+  {
+    title: "DROHNE112",
+    img: popUp1,
+    icons: {
+      icon: [html, css, js, tailwind, lottie],
+      title: ["asd", "asd", "asd", "asd", "asd"],
+    },
+  },
+  {
+    title: "M8iT",
+    img: popUp1,
+    icons: {
+      icon: [html, css, js, tailwind, lottie],
+      title: ["asd", "asd", "asd", "asd", "asd"],
+    },
+  },
+  {
+    title: "Glow Up",
+    img: popUp1,
+    icons: {
+      icon: [html, css, js, tailwind, lottie],
+      title: ["asd", "asd", "asd", "asd", "asd"],
+    },
+  },
+  {
+    title: "PsyCro",
     img: popUp1,
     icons: {
       icon: [html, css, js, tailwind, lottie],
