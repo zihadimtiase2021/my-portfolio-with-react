@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { useGlobalContext } from "../context/appContext";
+import useLazyLoadImages from "../customHooks/useLazyLoadImages";
 import { about, resume } from "../utils/constants";
 
 const About = () => {
@@ -8,6 +9,10 @@ const About = () => {
   const [readMore, setReadMore] = useState(false);
 
   const { setparams } = useGlobalContext();
+
+  const containerRef = useRef();
+
+  useLazyLoadImages(containerRef);
 
   // useEffect(() => {
   //   const height = showMoreRef.current.clientHeight;
@@ -21,7 +26,7 @@ const About = () => {
   }, [setparams]);
 
   return (
-    <div className="filtering-content about ">
+    <div ref={containerRef} className="filtering-content about ">
       {/* <!-- row --> */}
       <div className="flex flex-col md:flex-row gap-4 mb-16">
         {/* <!-- left --> */}
@@ -31,7 +36,8 @@ const About = () => {
             <div className="relative w-60">
               <img
                 className="w-full rounded-lg rotate-[5deg]"
-                src={about[0].img}
+                src={about[0].aboutImgPlaceHolder}
+                data-src={about[0].img}
                 loading="lazy"
                 alt="zihad"
               />

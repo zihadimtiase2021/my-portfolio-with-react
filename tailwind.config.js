@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/lib/esm/**/*.js",
+  ],
   darkMode: "class",
   theme: {
     container: {
@@ -46,5 +50,6 @@ export default {
       shake: "shake 0.7s ",
     },
   },
-  plugins: [],
+  // eslint-disable-next-line no-undef
+  plugins: [require("flowbite/plugin")],
 };

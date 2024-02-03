@@ -13,22 +13,30 @@ import {
 import { SiFreelancer, SiLinkedin } from "react-icons/si";
 import {
   aboutImg,
+  aboutImg_small,
+  bootstrap,
   css,
   dp,
   dp_small,
+  drohne112,
+  drohne112_popup,
+  glowUpMd,
+  glowUpMd_popup,
+  graphicsfreak,
+  graphicsfreak_popup,
+  graphicsfreak_popup_small,
   html,
   js,
+  lightgallery,
   lottie,
-  popUp1,
-  popUp2,
-  portfolio1,
-  portfolio2,
-  portfolio3,
-  portfolio4,
-  portfolio5,
-  portfolio6,
-  portfolio7,
-  portfolio8,
+  m3t_konfiguration,
+  m3t_konfiguration_popup,
+  m3tkonfigurator_small,
+  m8it,
+  m8it_popup,
+  psyCRO,
+  psyCRO_popup,
+  reactQuizApp,
   review1,
   review1_small,
   review2,
@@ -36,7 +44,13 @@ import {
   review4,
   review5,
   review5_small,
+  review_louise,
+  review_louise_small,
+  splidejs,
   tailwind,
+  webartist,
+  webartist_popup,
+  webartistpopup_small,
 } from "../assets";
 
 export const slogan = [
@@ -72,6 +86,7 @@ export const filteringNav = [
 export const about = [
   {
     img: aboutImg,
+    aboutImgPlaceHolder: aboutImg_small,
   },
   [
     "I'm Zihad Imtiase (Munna) living in Dhaka, Bangladesh. I'm a frontend web developer that thrives on bringing ideas to life with code!✨",
@@ -127,6 +142,17 @@ export const resume = {
 };
 
 export const reviews = [
+  {
+    DP: dp,
+    DpPlaceholder: dp_small,
+    reviewImg: review_louise,
+    placeholder: review_louise_small,
+    date: "16 Jan 2024·",
+    timeIcon: <BiWorld />,
+    linkIcon: <FaLink />,
+    link: "https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/",
+    content: `Working with Louise M was a pleasure. Excellent communication, professionalism, and a shared commitment to quality made our collaboration outstanding.`,
+  },
   {
     DP: dp,
     DpPlaceholder: dp_small,
@@ -220,45 +246,62 @@ export const portfolioItems = [
   {
     name: "Web Artist",
     uses: "HTML, Tailwind.css, JS",
-    img: portfolio1,
+    img: webartist,
   },
-  { name: "M3t-konfigurator", uses: "HTML, CSS, JS", img: portfolio2 },
-  { name: "Graphics Freak", uses: "HTML, CSS, JS", img: portfolio3 },
-  { name: "React Quiz App", uses: "HTML, Tailwind.css, JS", img: portfolio4 },
-  { name: "DROHNE112", uses: "React.js, Tailwind.css", img: portfolio5 },
-  { name: "M8iT", uses: "HTML, Bootstrap, js", img: portfolio6 },
-  { name: "Glow Up", uses: "React.js, Tailwind.css", img: portfolio7 },
-  { name: "PsyCro", uses: "HTML, Tailwind.css", img: portfolio8 },
+  { name: "M3t-konfigurator", uses: "HTML, CSS, JS", img: m3t_konfiguration },
+  { name: "Graphics Freak", uses: "HTML, CSS, JS", img: graphicsfreak },
+  { name: "React Quiz App", uses: "HTML, Tailwind.css, JS", img: reactQuizApp },
+  { name: "DROHNE112", uses: "React.js, Tailwind.css", img: drohne112 },
+  { name: "M8iT", uses: "HTML, Bootstrap, js", img: m8it },
+  { name: "Glow Up", uses: "React.js, Tailwind.css", img: glowUpMd },
+  { name: "PsyCRO", uses: "HTML, Tailwind.css", img: psyCRO },
 ];
 
 export const portfolioPopUp = [
   {
     title: "Web Artist",
-    img: popUp1,
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["html", "css", "js", "tailwind", "lottie"],
-    },
+    placeholder: webartistpopup_small,
+    img: [webartist_popup, m3t_konfiguration, webartist_popup],
+    icon: [
+      { icon: html, name: "html" },
+      { icon: css, name: "css" },
+      { icon: js, name: "JS" },
+      { icon: tailwind, name: "tailwind" },
+      { icon: lottie, name: "lottie" },
+    ],
+    description:
+      "I convert this web from Figma to HTML using Tailwind CSS for a web development agency.",
   },
   {
     title: "M3t-konfigurator",
-    img: popUp2,
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["asd", "asd", "asd", "asd", "asd"],
-    },
+    placeholder: m3tkonfigurator_small,
+    img: m3t_konfiguration_popup,
+    icon: [
+      { icon: html, name: "html" },
+      { icon: css, name: "css" },
+      { icon: js, name: "JS" },
+      { icon: bootstrap, name: "Bootstrap" },
+    ],
+    description:
+      "This is a fully dynamic web page based by vanila JS. You can click on the product to view its details and add it to the chart and your total price will be updated simultaneously, also if no product is selected the first time then a product will be selected by default and if you click the button. Below, you will see a popup of the selected product, etc.",
   },
   {
     title: "Graphics Freak",
-    img: popUp1,
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["asd", "asd", "asd", "asd", "asd"],
-    },
+    placeholder: graphicsfreak_popup_small,
+    img: graphicsfreak_popup,
+    icon: [
+      { icon: html, name: "html" },
+      { icon: css, name: "css" },
+      { icon: js, name: "JS" },
+      { icon: tailwind, name: "tailwind" },
+      { icon: splidejs, name: "splide.js" },
+      { icon: lightgallery, name: "lightgallery" },
+    ],
+    description: "I convert this web from Figma to HTML using Tailwind CSS.",
   },
   {
     title: "React Quiz App",
-    img: popUp1,
+    img: graphicsfreak_popup,
     icons: {
       icon: [html, css, js, tailwind, lottie],
       title: ["asd", "asd", "asd", "asd", "asd"],
@@ -266,7 +309,7 @@ export const portfolioPopUp = [
   },
   {
     title: "DROHNE112",
-    img: popUp1,
+    img: drohne112_popup,
     icons: {
       icon: [html, css, js, tailwind, lottie],
       title: ["asd", "asd", "asd", "asd", "asd"],
@@ -274,7 +317,7 @@ export const portfolioPopUp = [
   },
   {
     title: "M8iT",
-    img: popUp1,
+    img: m8it_popup,
     icons: {
       icon: [html, css, js, tailwind, lottie],
       title: ["asd", "asd", "asd", "asd", "asd"],
@@ -282,7 +325,7 @@ export const portfolioPopUp = [
   },
   {
     title: "Glow Up",
-    img: popUp1,
+    img: glowUpMd_popup,
     icons: {
       icon: [html, css, js, tailwind, lottie],
       title: ["asd", "asd", "asd", "asd", "asd"],
@@ -290,7 +333,7 @@ export const portfolioPopUp = [
   },
   {
     title: "PsyCro",
-    img: popUp1,
+    img: psyCRO_popup,
     icons: {
       icon: [html, css, js, tailwind, lottie],
       title: ["asd", "asd", "asd", "asd", "asd"],

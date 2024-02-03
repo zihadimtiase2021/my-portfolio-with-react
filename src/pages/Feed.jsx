@@ -81,7 +81,9 @@ const Feed = () => {
             {/* <!-- post-content --> */}
             <div className="mb-[14px]">
               {/* <!-- post-image & caption --> */}
-              <p className="text-base mb-4 px-4 md:px-6">{content}</p>
+              <p className="mb-4 px-4 text-sm md:text-base md:px-6">
+                {content}
+              </p>
               {/* <div
                 className={`blur-load bg-[url(/src/assets/img/review/small.png)] `}
               > */}

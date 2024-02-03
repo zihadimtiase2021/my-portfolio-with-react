@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import Modal from "../components/Modal";
 import { useGlobalContext } from "../context/appContext";
 import { portfolioItems } from "../utils/constants";
 
 const Portfolio = () => {
   const { setparams } = useGlobalContext();
-  const { portfolio } = useParams();
+  // const { portfolio } = useParams();
   const [modal, setModal] = useState(null);
 
   useEffect(() => {
-    setparams(portfolio);
-  }, [portfolio, setparams]);
+    setparams("portfolio");
+  }, [setparams]);
 
   useEffect(() => {
     console.log(modal);
@@ -31,12 +30,14 @@ const Portfolio = () => {
             <div
               key={index}
               onClick={() => setModal(item.name)}
-              className="shadow-xl bg-whiteHover dark:bg-darkHover p-3 rounded-xl  scale-hover"
+              className="shadow-xl bg-whiteHover dark:bg-darkHover p-3 rounded-xl  scale-hover cursor-pointer"
             >
               <div className="for-hover" href="#">
                 <img
                   className="w-full rounded-lg transition-all duration-300"
                   src={item.img}
+                  width="344"
+                  height="224.52"
                   alt="portfolio"
                 />
                 <div className="hover-item">
