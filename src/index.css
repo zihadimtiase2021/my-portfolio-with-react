@@ -146,3 +146,13 @@
 .blur-load > img {
   @apply opacity-0 transition-opacity duration-200 ease-in-out;
 }
+.hide-scrollbar {
+  @apply overflow-y-auto min-h-[300px] md:min-h-[550px];
+}
+.hide-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0000008a;
+  border-radius: 50px;
+}

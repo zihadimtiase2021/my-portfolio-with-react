@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { Carousel } from "flowbite-react";
+import { useEffect, useRef } from "react";
 import { FaLink } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { dp } from "../assets";
-
-import { Carousel } from "flowbite-react";
-import { useEffect, useRef } from "react";
 import useLazyLoadImages from "../customHooks/useLazyLoadImages";
 import { portfolioPopUp } from "../utils/constants";
 
@@ -13,13 +12,12 @@ const Modal = ({ modal, setModal }) => {
   const containerRef = useRef();
   useLazyLoadImages(containerRef);
 
-  // const imageRef = useRef();
-
+  //adding scrollbar class to the carosel image parent div
   useEffect(() => {
     const images = containerRef.current.querySelectorAll("img");
     images.forEach(element => {
       const parentEl = element.parentElement;
-      parentEl.classList.add("overflow-y-auto");
+      parentEl.classList.add("hide-scrollbar");
     });
   }, []);
 
@@ -61,13 +59,13 @@ const Modal = ({ modal, setModal }) => {
                 {/* <!-- left col --> */}
                 <div
                   ref={containerRef}
-                  className="md:w-2/3 md:pr-4 md:border-r border-gray-400 dark:border-gray-700 "
+                  className="md:w-2/3 md:pr-1 md:border-r border-gray-400 dark:border-gray-700 "
                 >
-                  <Carousel slide={false}>
+                  <Carousel pauseOnHover>
                     {item.img.map((imgItem, index) => (
                       <img
                         key={index}
-                        className="w-full transform translate-y-0 top-0"
+                        className="w-full transform translate-y-0 top-0 pr-[1px]"
                         src={item.placeholder}
                         data-src={imgItem}
                         width="461.66"
