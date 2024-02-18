@@ -36,6 +36,10 @@ import {
   psyCRO,
   psyCRO_popup,
   reactQuizApp,
+  reactQuizApp1,
+  reactQuizApp2,
+  reactQuizApp3,
+  reactQuizApp4,
   review1,
   review1_small,
   review2,
@@ -260,7 +264,7 @@ export const portfolioPopUp = [
   {
     title: "Web Artist",
     placeholder: webartistpopup_small,
-    img: [webartist_popup],
+    img: [webartist_popup, webartist_popup],
     icon: [
       { icon: html, name: "html" },
       { icon: css, name: "css" },
@@ -300,11 +304,23 @@ export const portfolioPopUp = [
   },
   {
     title: "React Quiz App",
-    img: [graphicsfreak_popup],
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["asd", "asd", "asd", "asd", "asd"],
-    },
+    placeholder: m3tkonfigurator_small,
+    img: [
+      reactQuizApp,
+      reactQuizApp1,
+      reactQuizApp2,
+      reactQuizApp3,
+      reactQuizApp4,
+    ],
+    icon: [
+      { icon: html, name: "html" },
+      { icon: css, name: "css" },
+      { icon: js, name: "JS" },
+      { icon: tailwind, name: "tailwind" },
+      { icon: lottie, name: "lottie" },
+    ],
+    description:
+      "I convert this web from Figma to HTML using Tailwind CSS for a web development agency.",
   },
   {
     title: "DROHNE112",

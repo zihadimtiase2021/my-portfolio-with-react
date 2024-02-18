@@ -1,25 +1,32 @@
 /* eslint-disable react/prop-types */
 
-import { Carousel } from "flowbite-react";
-import { useEffect, useRef } from "react";
-import { FaLink } from "react-icons/fa6";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { useRef } from "react";
+import { FaAngleLeft, FaAngleRight, FaLink } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { dp } from "../assets";
 import useLazyLoadImages from "../customHooks/useLazyLoadImages";
 import { portfolioPopUp } from "../utils/constants";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 const Modal = ({ modal, setModal }) => {
   const containerRef = useRef();
   useLazyLoadImages(containerRef);
 
   //adding scrollbar class to the carosel image parent div
-  useEffect(() => {
-    const images = containerRef.current.querySelectorAll("img");
-    images.forEach(element => {
-      const parentEl = element.parentElement;
-      parentEl.classList.add("hide-scrollbar");
-    });
-  }, []);
+  // useEffect(() => {
+  //   const images = containerRef.current.querySelectorAll("img");
+  //   images.forEach(element => {
+  //     const parentEl = element.parentElement;
+  //     parentEl.classList.add("hide-scrollbar");
+  //   });
+  // }, []);
 
   return portfolioPopUp.map(item => {
     if (modal == item.title) {
@@ -61,7 +68,7 @@ const Modal = ({ modal, setModal }) => {
                   ref={containerRef}
                   className="md:w-2/3 md:pr-1 md:border-r border-gray-400 dark:border-gray-700 "
                 >
-                  <Carousel pauseOnHover>
+                  {/* <Carousel pauseOnHover>
                     {item.img.map((imgItem, index) => (
                       <img
                         key={index}
@@ -73,15 +80,56 @@ const Modal = ({ modal, setModal }) => {
                         alt="Portfolio-popup"
                       />
                     ))}
-                  </Carousel>
-                  {/* <img
-                    className="w-full"
-                    src={item.placeholder}
-                    data-src={item.img}
-                    width="461.66"
-                    height="2000"
-                    alt="Portfolio-popup"
-                  /> */}
+                  </Carousel> */}
+
+                  {item.img.length > 1 ? (
+                    <Swiper
+                      // install Swiper modules
+                      modules={[Navigation, Pagination]}
+                      slidesPerView={1}
+                      navigation={{
+                        prevEl: ".prev",
+                        nextEl: ".next",
+                      }}
+                      pagination={{ clickable: true }}
+                    >
+                      {item.img.map((imgItem, index) => (
+                        <SwiperSlide key={index} className=" scrollbar">
+                          <img
+                            // className="w-full transform translate-y-0 top-0 pr-[1px]"
+                            src={item.placeholder}
+                            data-src={imgItem}
+                            width="461.66"
+                            height="2000"
+                            alt="Portfolio-popup"
+                          />
+                        </SwiperSlide>
+                      ))}
+                      <div
+                        className="w-10 h-10
+                         bg-[#e2a69c82] rounded-full flex justify-center items-center absolute top-1/2 z-10 cursor-pointer left-3 prev"
+                      >
+                        <FaAngleLeft />
+                      </div>
+                      <div
+                        className="w-10 h-10
+                         bg-[#e2a69c82] rounded-full flex justify-center items-center absolute top-1/2 z-10 cursor-pointer right-5 next"
+                      >
+                        <FaAngleRight />
+                      </div>
+                    </Swiper>
+                  ) : (
+                    <div className="scrollbar">
+                      <img
+                        className="w-full"
+                        src={item.placeholder}
+                        data-src={item.img}
+                        width="461.66"
+                        height="2000"
+                        alt="Portfolio-popup"
+                      />
+                    </div>
+                  )}
                 </div>
                 {/* <!-- right col --> */}
                 <div className="md:w-1/3 md:pl-4">

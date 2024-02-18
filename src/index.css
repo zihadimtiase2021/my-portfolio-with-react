@@ -58,7 +58,7 @@
   @apply opacity-100 z-20  overflow-y-auto;
 }
 .popup-parent-div {
-  @apply absolute top-[15%] left-[50%] bg-whiteHover p-4 dark:bg-darkHover mx-auto rounded-lg z-10 transform -translate-x-[50%] transition-all opacity-0 scale-0  w-11/12 h-auto md:w-[750px];
+  @apply absolute top-[10%] left-[50%] bg-whiteHover p-4 dark:bg-darkHover mx-auto rounded-lg z-10 transform -translate-x-[50%] transition-all opacity-0 scale-0  w-11/12 h-auto md:top-[15%] md:w-[750px];
 }
 .active .overly .popup-parent-div {
   @apply opacity-100 scale-100;
@@ -70,7 +70,7 @@
   @apply w-5 h-5 rounded-full bg-red-500 text-red-700 flex justify-center items-center text-base   cursor-pointer transition-all duration-200 md:text-transparent md:hover:text-red-700;
 }
 .visite-site-btn {
-  @apply flex justify-center items-center p-1 rounded-md text-white bg-myBlue hover:bg-[#3982E4] mb-4 transition-all;
+  @apply flex justify-center items-center p-1 rounded-md text-white bg-themeColor hover:bg-[#3982E4] mb-4 transition-all;
 }
 .scale-hover:hover img {
   @apply transform scale-105;
@@ -155,4 +155,26 @@
 .hide-scrollbar::-webkit-scrollbar-thumb {
   background-color: #0000008a;
   border-radius: 50px;
+}
+
+.scrollbar {
+  @apply max-h-[20rem] md:max-h-[34.375rem] overflow-y-auto;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  background-color: #e2a69c65;
+  border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: #e2a69c;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-themeColor;
+}
+.swiper-button-disabled {
+  @apply bg-[#e2a69c3b];
 }

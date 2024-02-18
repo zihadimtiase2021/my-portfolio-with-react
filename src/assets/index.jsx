@@ -34,6 +34,10 @@ import m3t_konfiguration from "./img/portfolio/m3t-konfigurator.webp";
 import m8it from "./img/portfolio/m8it.webp";
 import psyCRO from "./img/portfolio/psyCRO.webp";
 import reactQuizApp from "./img/portfolio/reactQuizApp.webp";
+import reactQuizApp1 from "./img/portfolio/reactQuizApp1.webp";
+import reactQuizApp2 from "./img/portfolio/reactQuizApp2.webp";
+import reactQuizApp3 from "./img/portfolio/reactQuizApp3.webp";
+import reactQuizApp4 from "./img/portfolio/reactQuizApp4.webp";
 import webartist from "./img/portfolio/webartist.webp";
 import postDp from "./img/post-dp.png";
 import review2 from "./img/review/review2.webp";
@@ -76,6 +80,10 @@ export {
   psyCRO,
   psyCRO_popup,
   reactQuizApp,
+  reactQuizApp1,
+  reactQuizApp2,
+  reactQuizApp3,
+  reactQuizApp4,
   review1,
   review1_small,
   review2,
