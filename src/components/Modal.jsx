@@ -97,6 +97,7 @@ const Modal = ({ modal, setModal }) => {
                         <SwiperSlide key={index} className=" scrollbar">
                           <img
                             // className="w-full transform translate-y-0 top-0 pr-[1px]"
+                            className="rounded-[10px]"
                             src={item.placeholder}
                             data-src={imgItem}
                             width="461.66"
@@ -149,7 +150,7 @@ const Modal = ({ modal, setModal }) => {
                       return (
                         <div
                           key={e.name}
-                          className="flex flex-col items-center"
+                          className="flex flex-col justify-between items-center"
                         >
                           <img
                             className="max-w-[48px]"

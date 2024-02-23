@@ -4,6 +4,12 @@ import graphicsfreak_popup from "./img/Portfolio-popup/graphicsfreakpopup.webp";
 import m3t_konfiguration_popup from "./img/Portfolio-popup/m3t-konfiguratorpopup.webp";
 import m8it_popup from "./img/Portfolio-popup/m8itpopup.webp";
 import psyCRO_popup from "./img/Portfolio-popup/psycroPopup.webp";
+import psyCRO_popup1 from "./img/Portfolio-popup/psycroPopup1.webp";
+import psyCRO_popup2 from "./img/Portfolio-popup/psycroPopup2.webp";
+import psyCRO_popup3 from "./img/Portfolio-popup/psycroPopup3.webp";
+import psyCRO_popup4 from "./img/Portfolio-popup/psycroPopup4.webp";
+import psyCRO_popup5 from "./img/Portfolio-popup/psycroPopup5.webp";
+import psyCRO_popup6 from "./img/Portfolio-popup/psycroPopup6.webp";
 import webartist_popup from "./img/Portfolio-popup/webartistpopup.webp";
 import aboutImg from "./img/ahh.jpg";
 import coverPhoto from "./img/cover-photo.webp";
@@ -15,6 +21,7 @@ import html from "./img/icons/html5.svg";
 import js from "./img/icons/js.svg";
 import lightgallery from "./img/icons/lightgallery.webp";
 import lottie from "./img/icons/lottie.svg";
+import owl from "./img/icons/owl.webp";
 import react from "./img/icons/react.svg";
 import splidejs from "./img/icons/splide.svg";
 import tailwind from "./img/icons/tailwind.svg";
@@ -29,6 +36,7 @@ import review_louise_small from "./img/placeHolderImages/review_louise_small.web
 import aboutImg_small from "./img/placeHolderImages/small-about.webp";
 import dp_small from "./img/placeHolderImages/small-new-dp2.webp";
 import webartistpopup_small from "./img/placeHolderImages/webartistpopup_small.webp";
+import nexelence from "./img/portfolio/Nexelence.webp";
 import drohne112 from "./img/portfolio/drohne112.webp";
 import glowUpMd from "./img/portfolio/glowUpMd.webp";
 import graphicsfreak from "./img/portfolio/graphicsfreak.webp";
@@ -78,9 +86,17 @@ export {
   m3tkonfigurator_small,
   m8it,
   m8it_popup,
+  nexelence,
+  owl,
   postDp,
   psyCRO,
   psyCRO_popup,
+  psyCRO_popup1,
+  psyCRO_popup2,
+  psyCRO_popup3,
+  psyCRO_popup4,
+  psyCRO_popup5,
+  psyCRO_popup6,
   react,
   reactQuizApp,
   reactQuizApp1,

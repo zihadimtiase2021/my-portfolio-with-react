@@ -72,7 +72,7 @@ const HeroSection = () => {
             <a
               href={message.link}
               target="_blank"
-              className="bg-themeColor text-white py-[6px] px-4 rounded-3xl mb-1 cursor-pointer transition hover:bg-secondThemeColor flex items-center gap-1"
+              className="bg-themeColor text-white hover:bg-black py-[6px] px-4 rounded-3xl mb-1 cursor-pointer transition duration-200  flex items-center gap-1"
               rel="noreferrer"
             >
               {message.icon} {message.text}

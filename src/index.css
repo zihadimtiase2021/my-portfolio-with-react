@@ -151,6 +151,7 @@
 }
 .hide-scrollbar::-webkit-scrollbar {
   width: 2px;
+  height: 80%;
 }
 .hide-scrollbar::-webkit-scrollbar-thumb {
   background-color: #0000008a;
@@ -158,7 +159,7 @@
 }
 
 .scrollbar {
-  @apply max-h-[20rem] md:max-h-[34.375rem] overflow-y-auto;
+  @apply max-h-[20rem] md:max-h-[34.375rem] overflow-y-auto rounded-[10px];
 }
 .scrollbar::-webkit-scrollbar {
   width: 4px;

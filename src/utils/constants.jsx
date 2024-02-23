@@ -18,8 +18,6 @@ import {
   css,
   dp,
   dp_small,
-  drohne112,
-  drohne112_popup,
   glowUpMd,
   glowUpMd_popup,
   graphicsfreak,
@@ -33,8 +31,17 @@ import {
   m3tkonfigurator_small,
   m8it,
   m8it_popup,
+  nexelence,
+  owl,
   psyCRO,
   psyCRO_popup,
+  psyCRO_popup1,
+  psyCRO_popup2,
+  psyCRO_popup3,
+  psyCRO_popup4,
+  psyCRO_popup5,
+  psyCRO_popup6,
+  react,
   reactQuizApp,
   reactQuizApp1,
   reactQuizApp2,
@@ -74,7 +81,7 @@ export const status = [
 ];
 
 export const message = {
-  text: "Message",
+  text: "Whatsapp",
   icon: <FaWhatsapp />,
   link: "https://wa.me/01728964769",
 };
@@ -247,39 +254,44 @@ export const footerLinks = [
 ];
 export const portfolioItems = [
   {
+    name: "Nexelence",
+    uses: "HTML, Tailwind.css",
+    img: nexelence,
+    category: "vanila js",
+  },
+  {
     name: "Web Artist",
     uses: "HTML, Tailwind.css, JS",
     img: webartist,
-    category: "webflow",
+    category: "vanila js",
   },
   {
     name: "M3t-konfigurator",
-    uses: "HTML, CSS, JS",
+    uses: "HTML, BOOTSTRAP, JS",
     img: m3t_konfiguration,
-    category: "react js",
+    category: "vanila js",
   },
   {
     name: "Graphics Freak",
-    uses: "HTML, CSS, JS",
+    uses: "HTML, Tailwind.css, JS",
     img: graphicsfreak,
-    category: "webflow",
+    category: "vanila js",
   },
   {
     name: "React Quiz App",
-    uses: "HTML, Tailwind.css, JS",
-    img: reactQuizApp,
-    category: "webflow",
-  },
-  {
-    name: "DROHNE112",
     uses: "React.js, Tailwind.css",
-    img: drohne112,
+    img: reactQuizApp,
     category: "react js",
   },
-  { name: "M8iT", uses: "HTML, Bootstrap, js", img: m8it, category: "webflow" },
+  {
+    name: "M8iT",
+    uses: "HTML, Bootstrap, js",
+    img: m8it,
+    category: "vanila js",
+  },
   {
     name: "Glow Up",
-    uses: "React.js, Tailwind.css",
+    uses: "HTML, Bootstrap, js",
     img: glowUpMd,
     category: "vanila js",
   },
@@ -287,7 +299,7 @@ export const portfolioItems = [
     name: "PsyCRO",
     uses: "HTML, Tailwind.css",
     img: psyCRO,
-    category: "react js",
+    category: "vanila js",
   },
 ];
 
@@ -295,7 +307,7 @@ export const portfolioPopUp = [
   {
     title: "Web Artist",
     placeholder: webartistpopup_small,
-    img: [webartist_popup, webartist_popup],
+    img: [webartist_popup],
     icon: [
       { icon: html, name: "html" },
       { icon: css, name: "css" },
@@ -344,45 +356,52 @@ export const portfolioPopUp = [
       reactQuizApp4,
     ],
     icon: [
-      { icon: html, name: "html" },
-      { icon: css, name: "css" },
-      { icon: js, name: "JS" },
+      { icon: react, name: "React" },
       { icon: tailwind, name: "tailwind" },
-      { icon: lottie, name: "lottie" },
     ],
-    description:
-      "I convert this web from Figma to HTML using Tailwind CSS for a web development agency.",
+    description: `I made this React Quiz app for fun. Here you can explore JavaScript videos, then take a short test and show your results points.`,
   },
-  {
-    title: "DROHNE112",
-    img: drohne112_popup,
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["asd", "asd", "asd", "asd", "asd"],
-    },
-  },
+
   {
     title: "M8iT",
-    img: m8it_popup,
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["asd", "asd", "asd", "asd", "asd"],
-    },
+    placeholder: m3tkonfigurator_small,
+    img: [m8it_popup],
+    icon: [
+      { icon: bootstrap, name: "Bootstrap" },
+      { icon: owl, name: "owl caurosel" },
+      { icon: html, name: "HTML" },
+      { icon: css, name: "Css" },
+    ],
+    description: `I implement it from Figma to HTML for a German company.`,
   },
   {
     title: "Glow Up",
-    img: glowUpMd_popup,
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["asd", "asd", "asd", "asd", "asd"],
-    },
+    placeholder: m3tkonfigurator_small,
+    img: [glowUpMd_popup],
+    icon: [
+      { icon: bootstrap, name: "Bootstrap" },
+      { icon: html, name: "HTML" },
+      { icon: css, name: "Css" },
+    ],
+    description: `I implement it for an US fashion designer.`,
   },
   {
-    title: "PsyCro",
-    img: psyCRO_popup,
-    icons: {
-      icon: [html, css, js, tailwind, lottie],
-      title: ["asd", "asd", "asd", "asd", "asd"],
-    },
+    title: "PsyCRO",
+    placeholder: m3tkonfigurator_small,
+    img: [
+      psyCRO_popup,
+      psyCRO_popup1,
+      psyCRO_popup2,
+      psyCRO_popup3,
+      psyCRO_popup4,
+      psyCRO_popup5,
+      psyCRO_popup6,
+    ],
+    icon: [
+      { icon: tailwind, name: "Tailwind.css" },
+      { icon: html, name: "HTML" },
+      { icon: css, name: "Css" },
+    ],
+    description: `I convert this web from Figma to HTML using Tailwind CSS.`,
   },
 ];

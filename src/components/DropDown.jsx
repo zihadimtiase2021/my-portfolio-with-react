@@ -19,8 +19,6 @@ const DropDown = ({ filterItems }) => {
 
     //get the option data type and set to the state
     setDropDownValue(e.target.dataset.type);
-    // console.log(e.target.dataset.type);
-    // filterItems(e.target.dataset.type);
   };
 
   useEffect(() => {
@@ -31,7 +29,7 @@ const DropDown = ({ filterItems }) => {
     <>
       <div
         onClick={handleClick}
-        className="dropdown relative h-[34px] w-44 mb-[46px] text-sm capitalize z-10"
+        className="dropdown relative h-[34px] w-44 mb-8 text-sm capitalize z-10"
       >
         <div
           ref={dropDownTextRef}
