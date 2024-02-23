@@ -7,8 +7,8 @@ const Contact = () => {
   const { contact } = useParams();
 
   useEffect(() => {
-    setparams(contact);
-  }, [contact, setparams]);
+    setparams("contact");
+  }, [setparams]);
 
   console.log(contact);
 

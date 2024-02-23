@@ -51,7 +51,7 @@ const Feed = () => {
         return (
           <div
             key={index}
-            className="shadow-xl bg-myWhite dark:bg-darkHover py-4 rounded-xl md:py-6 md:pb-4"
+            className="shadow-xl bg-white dark:bg-darkHover py-4 rounded-xl md:py-6 md:pb-4"
           >
             {/* <!-- post-header --> */}
             <div className="flex gap-4 items-center mb-3 px-4 md:px-6">

@@ -250,14 +250,45 @@ export const portfolioItems = [
     name: "Web Artist",
     uses: "HTML, Tailwind.css, JS",
     img: webartist,
+    category: "webflow",
   },
-  { name: "M3t-konfigurator", uses: "HTML, CSS, JS", img: m3t_konfiguration },
-  { name: "Graphics Freak", uses: "HTML, CSS, JS", img: graphicsfreak },
-  { name: "React Quiz App", uses: "HTML, Tailwind.css, JS", img: reactQuizApp },
-  { name: "DROHNE112", uses: "React.js, Tailwind.css", img: drohne112 },
-  { name: "M8iT", uses: "HTML, Bootstrap, js", img: m8it },
-  { name: "Glow Up", uses: "React.js, Tailwind.css", img: glowUpMd },
-  { name: "PsyCRO", uses: "HTML, Tailwind.css", img: psyCRO },
+  {
+    name: "M3t-konfigurator",
+    uses: "HTML, CSS, JS",
+    img: m3t_konfiguration,
+    category: "react js",
+  },
+  {
+    name: "Graphics Freak",
+    uses: "HTML, CSS, JS",
+    img: graphicsfreak,
+    category: "webflow",
+  },
+  {
+    name: "React Quiz App",
+    uses: "HTML, Tailwind.css, JS",
+    img: reactQuizApp,
+    category: "webflow",
+  },
+  {
+    name: "DROHNE112",
+    uses: "React.js, Tailwind.css",
+    img: drohne112,
+    category: "react js",
+  },
+  { name: "M8iT", uses: "HTML, Bootstrap, js", img: m8it, category: "webflow" },
+  {
+    name: "Glow Up",
+    uses: "React.js, Tailwind.css",
+    img: glowUpMd,
+    category: "vanila js",
+  },
+  {
+    name: "PsyCRO",
+    uses: "HTML, Tailwind.css",
+    img: psyCRO,
+    category: "react js",
+  },
 ];
 
 export const portfolioPopUp = [

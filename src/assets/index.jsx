@@ -15,8 +15,10 @@ import html from "./img/icons/html5.svg";
 import js from "./img/icons/js.svg";
 import lightgallery from "./img/icons/lightgallery.webp";
 import lottie from "./img/icons/lottie.svg";
+import react from "./img/icons/react.svg";
 import splidejs from "./img/icons/splide.svg";
 import tailwind from "./img/icons/tailwind.svg";
+import webflow from "./img/icons/webflow-logo.svg";
 import dp from "./img/new-dp2.webp";
 import coverPhoto_small from "./img/placeHolderImages/cover-photo-small.webp";
 import graphicsfreak_popup_small from "./img/placeHolderImages/graphicsfreakpopup_small.webp";
@@ -79,6 +81,7 @@ export {
   postDp,
   psyCRO,
   psyCRO_popup,
+  react,
   reactQuizApp,
   reactQuizApp1,
   reactQuizApp2,
@@ -100,4 +103,5 @@ export {
   webartist,
   webartist_popup,
   webartistpopup_small,
+  webflow,
 };

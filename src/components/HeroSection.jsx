@@ -128,7 +128,7 @@ const HeroSection = () => {
               key={item.item}
               to={item.link}
               onClick={e => handleActive(e)}
-              className={`hover:bg-[#F1F3F5] dark:hover:bg-[#212529] w-full py-[11px] flex justify-center ${
+              className={`hover:bg-white dark:hover:bg-[#212529] w-full py-[11px] flex justify-center ${
                 item.item == params ? "active" : null
               }`}
             >
