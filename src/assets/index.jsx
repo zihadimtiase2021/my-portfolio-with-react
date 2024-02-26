@@ -3,6 +3,8 @@ import glowUpMd_popup from "./img/Portfolio-popup/glowUpMdPopup.webp";
 import graphicsfreak_popup from "./img/Portfolio-popup/graphicsfreakpopup.webp";
 import m3t_konfiguration_popup from "./img/Portfolio-popup/m3t-konfiguratorpopup.webp";
 import m8it_popup from "./img/Portfolio-popup/m8itpopup.webp";
+import nexelence_popup from "./img/Portfolio-popup/nexelence_popup.webp";
+import nexelence_popup1 from "./img/Portfolio-popup/nexelence_popup1.webp";
 import psyCRO_popup from "./img/Portfolio-popup/psycroPopup.webp";
 import psyCRO_popup1 from "./img/Portfolio-popup/psycroPopup1.webp";
 import psyCRO_popup2 from "./img/Portfolio-popup/psycroPopup2.webp";
@@ -87,6 +89,8 @@ export {
   m8it,
   m8it_popup,
   nexelence,
+  nexelence_popup,
+  nexelence_popup1,
   owl,
   postDp,
   psyCRO,

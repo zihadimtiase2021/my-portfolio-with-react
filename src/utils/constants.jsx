@@ -32,6 +32,8 @@ import {
   m8it,
   m8it_popup,
   nexelence,
+  nexelence_popup,
+  nexelence_popup1,
   owl,
   psyCRO,
   psyCRO_popup,
@@ -304,6 +306,18 @@ export const portfolioItems = [
 ];
 
 export const portfolioPopUp = [
+  {
+    title: "Nexelence",
+    placeholder: webartistpopup_small,
+    img: [nexelence_popup, nexelence_popup1],
+    icon: [
+      { icon: html, name: "html" },
+      { icon: css, name: "css" },
+      { icon: tailwind, name: "tailwind" },
+      { icon: js, name: "JS" },
+    ],
+    description: "I convert this web from Figma to HTML using Tailwind CSS.",
+  },
   {
     title: "Web Artist",
     placeholder: webartistpopup_small,

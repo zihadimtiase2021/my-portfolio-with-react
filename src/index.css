@@ -159,7 +159,7 @@
 }
 
 .scrollbar {
-  @apply max-h-[20rem] md:max-h-[34.375rem] overflow-y-auto rounded-[10px];
+  @apply max-h-[25rem] md:max-h-[34.375rem] overflow-y-auto rounded-[10px];
 }
 .scrollbar::-webkit-scrollbar {
   width: 4px;
