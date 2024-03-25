@@ -76,7 +76,8 @@
   @apply transform scale-105;
 }
 .input-el {
-  @apply h-12 bg-transparent w-full border-b border-myGray focus:outline-none focus:border-myDark dark:focus:border-white;
+  @apply h-12 bg-transparent w-full border-b border-myGray focus:outline-none 
+  focus:border-themeColor;
 }
 .error small {
   @apply block text-red-500 text-xs md:text-base;
@@ -91,7 +92,7 @@
   @apply block;
 }
 .submit {
-  @apply rounded-md px-5 py-4 bg-myDark text-white dark:bg-white dark:text-black active:bg-myBlue dark:active:bg-myBlue dark:active:text-white cursor-pointer;
+  @apply rounded-md px-5 py-4  bg-myDark text-white dark:bg-themeColor dark:active:text-white cursor-pointer;
 }
 .shake {
   @apply animate-shake;
