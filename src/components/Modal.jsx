@@ -15,6 +15,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
+import { loader } from "../assets";
+
 const Modal = ({ modal, setModal }) => {
   const containerRef = useRef();
   useLazyLoadImages(containerRef);
@@ -98,7 +100,7 @@ const Modal = ({ modal, setModal }) => {
                           <img
                             // className="w-full transform translate-y-0 top-0 pr-[1px]"
                             className="rounded-[10px]"
-                            src={item.placeholder}
+                            src={loader}
                             data-src={imgItem}
                             width="461.66"
                             height="2000"

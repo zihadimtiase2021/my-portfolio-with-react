@@ -31,6 +31,8 @@ import webflow from "./img/icons/webflow-logo.svg";
 import dp from "./img/new-dp2.webp";
 import coverPhoto_small from "./img/placeHolderImages/cover-photo-small.webp";
 import graphicsfreak_popup_small from "./img/placeHolderImages/graphicsfreakpopup_small.webp";
+import load from "./img/placeHolderImages/load.gif";
+import loader from "./img/placeHolderImages/loader.gif";
 import m3tkonfigurator_small from "./img/placeHolderImages/m3t-konfigurator_small.webp";
 import review1_small from "./img/placeHolderImages/review1-small.webp";
 import review5_small from "./img/placeHolderImages/review5-small.webp";
@@ -81,6 +83,8 @@ export {
   html,
   js,
   lightgallery,
+  load,
+  loader,
   logo,
   lottie,
   m3t_konfiguration,
