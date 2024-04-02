@@ -34,13 +34,15 @@ const About = () => {
         <div className="flex justify-center mx-4 md:w-1/3">
           <div className="h-[360px] sticky top-20">
             <div className="relative w-60">
-              <img
-                className="w-full rounded-lg rotate-[5deg]"
-                src={about[0].aboutImgPlaceHolder}
-                data-src={about[0].img}
-                loading="lazy"
-                alt="zihad"
-              />
+              <div className="overflow-hidden">
+                <img
+                  className="w-full rounded-lg rotate-[5deg]"
+                  src={about[0].aboutImgPlaceHolder}
+                  data-src={about[0].img}
+                  loading="lazy"
+                  alt="zihad"
+                />
+              </div>
               <div className="absolute h-full w-full bg-themeColor rounded-lg top-0 left-0 -z-[1] "></div>
             </div>
           </div>
