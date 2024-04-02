@@ -87,12 +87,14 @@ const Feed = () => {
               {/* <div
                 className={`blur-load bg-[url(/src/assets/img/review/small.png)] `}
               > */}
-              <img
-                className="w-full h-auto object-center object-cover "
-                src={placeholder}
-                data-src={reviewImg}
-                alt="review"
-              />
+              <div className="overflow-hidden">
+                <img
+                  className="w-full h-auto object-center object-cover "
+                  src={placeholder}
+                  data-src={reviewImg}
+                  alt="review"
+                />
+              </div>
               {/* </div> */}
               {/* <!-- post-image end --> */}
             </div>
