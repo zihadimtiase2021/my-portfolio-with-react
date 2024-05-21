@@ -12,7 +12,7 @@ const PortfolioCard = ({ setModal, newPortfolioItems }) => {
           >
             <div className="for-hover" href="#">
               <img
-                className="w-full h-auto rounded-lg transition-all duration-300 object-cover object-center"
+                className="w-full h-auto rounded-lg transition-all duration-300 "
                 src={img}
                 width="344"
                 height="224.52"

@@ -10,14 +10,17 @@ import {
   FaSchool,
   FaWhatsapp,
 } from "react-icons/fa6";
-import { SiFreelancer, SiLinkedin } from "react-icons/si";
+import { SiFiverr, SiLinkedin } from "react-icons/si";
 import {
   aboutImg,
   aboutImg_small,
+  adslab,
   bootstrap,
   css,
   dp,
   dp_small,
+  drohne112_webflow,
+  fsAttribute,
   glowUpMd,
   glowUpMd_popup,
   graphicsfreak,
@@ -25,6 +28,7 @@ import {
   graphicsfreak_popup_small,
   html,
   js,
+  leading_employers,
   lightgallery,
   lottie,
   m3t_konfiguration,
@@ -34,6 +38,7 @@ import {
   nexelence,
   nexelence_popup,
   nexelence_popup1,
+  nextlevel_ecom,
   owl,
   psyCRO,
   psyCRO_popup,
@@ -43,12 +48,14 @@ import {
   psyCRO_popup4,
   psyCRO_popup5,
   psyCRO_popup6,
+  pult,
   react,
   reactQuizApp,
   reactQuizApp1,
   reactQuizApp2,
   reactQuizApp3,
   reactQuizApp4,
+  relume,
   review1,
   review1_small,
   review2,
@@ -58,11 +65,14 @@ import {
   review5_small,
   review_louise,
   review_louise_small,
+  schaeferundfriends,
+  slube,
   splidejs,
   tailwind,
   webartist,
   webartist_popup,
   webartistpopup_small,
+  webflow,
 } from "../assets";
 
 export const slogan = [
@@ -244,9 +254,9 @@ export const footerLinks = [
     link: "https://github.com/zihadimtiase2021",
   },
   {
-    name: "Freelancer",
-    icon: <SiFreelancer />,
-    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
+    name: "Fiverr",
+    icon: <SiFiverr />,
+    link: "https://www.fiverr.com/webwizard_zihad",
   },
   {
     name: "Facebook",
@@ -256,11 +266,54 @@ export const footerLinks = [
 ];
 export const portfolioItems = [
   {
+    name: "Pult",
+    uses: "WEBFLOW",
+    img: pult,
+    category: "webflow",
+  },
+  {
+    name: "Nextlevel Ecom",
+    uses: "WEBFLOW",
+    img: nextlevel_ecom,
+    category: "webflow",
+  },
+  {
+    name: "adslab",
+    uses: "WEBFLOW",
+    img: adslab,
+    category: "webflow",
+  },
+  {
     name: "Nexelence",
     uses: "HTML, Tailwind.css",
     img: nexelence,
     category: "vanila js",
   },
+  {
+    name: "Schaeferund Friends",
+    uses: "WEBFLOW",
+    img: schaeferundfriends,
+    category: "webflow",
+  },
+  {
+    name: "Leading Employers",
+    uses: "WEBFLOW",
+    img: leading_employers,
+    category: "webflow",
+  },
+  {
+    name: "Drohne112",
+    uses: "WEBFLOW",
+    img: drohne112_webflow,
+    category: "webflow",
+  },
+  {
+    name: "Slube",
+    uses: "HTML, SCSS",
+    img: slube,
+    category: "vanila js",
+  },
+
   {
     name: "Web Artist",
     uses: "HTML, Tailwind.css, JS",
@@ -306,6 +359,17 @@ export const portfolioItems = [
 ];
 
 export const portfolioPopUp = [
+  {
+    title: "Pult",
+    placeholder: webartistpopup_small,
+    img: [nexelence_popup, nexelence_popup1],
+    icon: [
+      { icon: webflow, name: "Webflow" },
+      { icon: relume, name: "Relume" },
+      { icon: fsAttribute, name: "Fs Attribute" },
+    ],
+    description: "I convert this web from Figma to WEBFLOW",
+  },
   {
     title: "Nexelence",
     placeholder: webartistpopup_small,

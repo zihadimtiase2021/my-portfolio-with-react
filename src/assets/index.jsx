@@ -18,13 +18,16 @@ import coverPhoto from "./img/cover-photo.webp";
 import dp2 from "./img/dp-2.webp";
 import reviewDP from "./img/dp.webp";
 import bootstrap from "./img/icons/bootstrap.svg";
+import clientFirst from "./img/icons/client-first.svg";
 import css from "./img/icons/css3.svg";
+import fsAttribute from "./img/icons/finsweet-attribute.svg";
 import html from "./img/icons/html5.svg";
 import js from "./img/icons/js.svg";
 import lightgallery from "./img/icons/lightgallery.webp";
 import lottie from "./img/icons/lottie.svg";
 import owl from "./img/icons/owl.webp";
 import react from "./img/icons/react.svg";
+import relume from "./img/icons/relume.png";
 import splidejs from "./img/icons/splide.svg";
 import tailwind from "./img/icons/tailwind.svg";
 import webflow from "./img/icons/webflow-logo.svg";
@@ -39,17 +42,24 @@ import aboutImg_small from "./img/placeHolderImages/small-about.webp";
 import dp_small from "./img/placeHolderImages/small-new-dp2.webp";
 import webartistpopup_small from "./img/placeHolderImages/webartistpopup_small.webp";
 import nexelence from "./img/portfolio/Nexelence.webp";
+import slube from "./img/portfolio/Slube.webp";
+import adslab from "./img/portfolio/adslab.webp";
 import drohne112 from "./img/portfolio/drohne112.webp";
+import drohne112_webflow from "./img/portfolio/drohne112_webflow.webp";
 import glowUpMd from "./img/portfolio/glowUpMd.webp";
 import graphicsfreak from "./img/portfolio/graphicsfreak.webp";
+import leading_employers from "./img/portfolio/leading-employers.webp";
 import m3t_konfiguration from "./img/portfolio/m3t-konfigurator.webp";
 import m8it from "./img/portfolio/m8it.webp";
+import nextlevel_ecom from "./img/portfolio/nextlevel-ecom.webp";
 import psyCRO from "./img/portfolio/psyCRO.webp";
+import pult from "./img/portfolio/pult.webp";
 import reactQuizApp from "./img/portfolio/reactQuizApp.webp";
 import reactQuizApp1 from "./img/portfolio/reactQuizApp1.webp";
 import reactQuizApp2 from "./img/portfolio/reactQuizApp2.webp";
 import reactQuizApp3 from "./img/portfolio/reactQuizApp3.webp";
 import reactQuizApp4 from "./img/portfolio/reactQuizApp4.webp";
+import schaeferundfriends from "./img/portfolio/schaeferundfriends.webp";
 import webartist from "./img/portfolio/webartist.webp";
 import postDp from "./img/post-dp.png";
 import review2 from "./img/review/review2.webp";
@@ -64,7 +74,9 @@ import logo from "./img/web-banai-logo.webp";
 export {
   aboutImg,
   aboutImg_small,
+  adslab,
   bootstrap,
+  clientFirst,
   coverPhoto,
   coverPhoto_small,
   css,
@@ -73,6 +85,8 @@ export {
   dp_small,
   drohne112,
   drohne112_popup,
+  drohne112_webflow,
+  fsAttribute,
   glowUpMd,
   glowUpMd_popup,
   graphicsfreak,
@@ -80,6 +94,7 @@ export {
   graphicsfreak_popup_small,
   html,
   js,
+  leading_employers,
   lightgallery,
   logo,
   lottie,
@@ -91,6 +106,7 @@ export {
   nexelence,
   nexelence_popup,
   nexelence_popup1,
+  nextlevel_ecom,
   owl,
   postDp,
   psyCRO,
@@ -101,12 +117,14 @@ export {
   psyCRO_popup4,
   psyCRO_popup5,
   psyCRO_popup6,
+  pult,
   react,
   reactQuizApp,
   reactQuizApp1,
   reactQuizApp2,
   reactQuizApp3,
   reactQuizApp4,
+  relume,
   review1,
   review1_small,
   review2,
@@ -117,6 +135,8 @@ export {
   reviewDP,
   review_louise,
   review_louise_small,
+  schaeferundfriends,
+  slube,
   splidejs,
   tailwind,
   transparentDp,
