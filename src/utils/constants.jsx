@@ -57,6 +57,12 @@ import {
   psyCRO_popup6,
   psyCRO_small,
   pult,
+  pultPopup,
+  pultPopup1,
+  pultPopup2,
+  pultPopup3,
+  pultPopup4,
+  pultPopup5,
   pult_small,
   react,
   reactQuizApp,
@@ -387,8 +393,16 @@ export const portfolioItems = [
 export const portfolioPopUp = [
   {
     title: "Pult",
+    link: "https://pult.com/",
     placeholder: loading,
-    img: [nexelence_popup, nexelence_popup1],
+    img: [
+      pultPopup,
+      pultPopup1,
+      pultPopup2,
+      pultPopup3,
+      pultPopup4,
+      pultPopup5,
+    ],
     icon: [
       { icon: webflow, name: "Webflow" },
       { icon: relume, name: "Relume" },

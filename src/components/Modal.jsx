@@ -40,8 +40,10 @@ const Modal = ({ modal, setModal }) => {
               <div className="flex justify-between mb-4">
                 <div>
                   <a
-                    href="#"
+                    href={`${item.link}`}
+                    target="_blank"
                     className="text-2xl font-semibold flex items-center gap-2 hover:underline"
+                    rel="noreferrer"
                   >
                     <FaLink className="text-lg" />
                     {item.title}
@@ -69,20 +71,6 @@ const Modal = ({ modal, setModal }) => {
                   ref={containerRef}
                   className="md:w-2/3 md:pr-1 md:border-r border-gray-400 dark:border-gray-700 "
                 >
-                  {/* <Carousel pauseOnHover>
-                    {item.img.map((imgItem, index) => (
-                      <img
-                        key={index}
-                        className="w-full transform translate-y-0 top-0 pr-[1px]"
-                        src={item.placeholder}
-                        data-src={imgItem}
-                        width="461.66"
-                        height="2000"
-                        alt="Portfolio-popup"
-                      />
-                    ))}
-                  </Carousel> */}
-
                   {item.img.length > 1 ? (
                     <Swiper
                       // install Swiper modules
@@ -165,7 +153,12 @@ const Modal = ({ modal, setModal }) => {
                   </div>
                   {/* <!-- visit-btn --> */}
 
-                  <a href="#" className="visite-site-btn">
+                  <a
+                    href={`${item.link}`}
+                    target="_blank"
+                    className="visite-site-btn"
+                    rel="noreferrer"
+                  >
                     Visit Site
                   </a>
                 </div>

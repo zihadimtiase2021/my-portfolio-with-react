@@ -12,6 +12,12 @@ import psyCRO_popup3 from "./img/Portfolio-popup/psycroPopup3.webp";
 import psyCRO_popup4 from "./img/Portfolio-popup/psycroPopup4.webp";
 import psyCRO_popup5 from "./img/Portfolio-popup/psycroPopup5.webp";
 import psyCRO_popup6 from "./img/Portfolio-popup/psycroPopup6.webp";
+import pultPopup from "./img/Portfolio-popup/pultPopup.webp";
+import pultPopup1 from "./img/Portfolio-popup/pultPopup1.webp";
+import pultPopup2 from "./img/Portfolio-popup/pultPopup2.webp";
+import pultPopup3 from "./img/Portfolio-popup/pultPopup3.webp";
+import pultPopup4 from "./img/Portfolio-popup/pultPopup4.webp";
+import pultPopup5 from "./img/Portfolio-popup/pultPopup5.webp";
 import webartist_popup from "./img/Portfolio-popup/webartistpopup.webp";
 import aboutImg from "./img/ahh.jpg";
 import coverPhoto from "./img/cover-photo.webp";
@@ -144,6 +150,12 @@ export {
   psyCRO_popup6,
   psyCRO_small,
   pult,
+  pultPopup,
+  pultPopup1,
+  pultPopup2,
+  pultPopup3,
+  pultPopup4,
+  pultPopup5,
   pult_small,
   react,
   reactQuizApp,
