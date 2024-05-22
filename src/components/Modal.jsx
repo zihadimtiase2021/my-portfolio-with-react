@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Modal = ({ modal, setModal }) => {
+  //container ref for the lazy loading for target the container
   const containerRef = useRef();
   useLazyLoadImages(containerRef);
 

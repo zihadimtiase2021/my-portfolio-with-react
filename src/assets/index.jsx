@@ -32,14 +32,30 @@ import splidejs from "./img/icons/splide.svg";
 import tailwind from "./img/icons/tailwind.svg";
 import webflow from "./img/icons/webflow-logo.svg";
 import dp from "./img/new-dp2.webp";
+import adslab_small from "./img/placeHolderImages/adslab_small.webp";
 import coverPhoto_small from "./img/placeHolderImages/cover-photo-small.webp";
+import drohne112_webflow_small from "./img/placeHolderImages/drohne112_webflow_small.webp";
+import glowUpMd_small from "./img/placeHolderImages/glowUpMd_small.webp";
+import graphicsfreak_small from "./img/placeHolderImages/graphicsfreak_small.webp";
 import graphicsfreak_popup_small from "./img/placeHolderImages/graphicsfreakpopup_small.webp";
-import m3tkonfigurator_small from "./img/placeHolderImages/m3t-konfigurator_small.webp";
+import loading from "./img/placeHolderImages/loading.gif";
+import {
+  default as m3t_konfigurator_small,
+  default as m3tkonfigurator_small,
+} from "./img/placeHolderImages/m3t-konfigurator_small.webp";
+import m8it_small from "./img/placeHolderImages/m8it_small.webp";
+import nexelence_small from "./img/placeHolderImages/nexelence_small.webp";
+import nextlevel_ecom_small from "./img/placeHolderImages/nextlevel-ecom-small.webp";
+import psyCRO_small from "./img/placeHolderImages/psyCRO_small.webp";
+import pult_small from "./img/placeHolderImages/pult-small.webp";
+import reactQuizApp_small from "./img/placeHolderImages/reactQuizApp_small.webp";
 import review1_small from "./img/placeHolderImages/review1-small.webp";
 import review5_small from "./img/placeHolderImages/review5-small.webp";
 import review_louise_small from "./img/placeHolderImages/review_louise_small.webp";
+import schaeferundfriends_small from "./img/placeHolderImages/schaeferundfriends_small.webp";
 import aboutImg_small from "./img/placeHolderImages/small-about.webp";
 import dp_small from "./img/placeHolderImages/small-new-dp2.webp";
+import webartist_small from "./img/placeHolderImages/webartist_small.webp";
 import webartistpopup_small from "./img/placeHolderImages/webartistpopup_small.webp";
 import nexelence from "./img/portfolio/Nexelence.webp";
 import slube from "./img/portfolio/Slube.webp";
@@ -75,6 +91,7 @@ export {
   aboutImg,
   aboutImg_small,
   adslab,
+  adslab_small,
   bootstrap,
   clientFirst,
   coverPhoto,
@@ -86,27 +103,35 @@ export {
   drohne112,
   drohne112_popup,
   drohne112_webflow,
+  drohne112_webflow_small,
   fsAttribute,
   glowUpMd,
   glowUpMd_popup,
+  glowUpMd_small,
   graphicsfreak,
   graphicsfreak_popup,
   graphicsfreak_popup_small,
+  graphicsfreak_small,
   html,
   js,
   leading_employers,
   lightgallery,
+  loading,
   logo,
   lottie,
   m3t_konfiguration,
   m3t_konfiguration_popup,
+  m3t_konfigurator_small,
   m3tkonfigurator_small,
   m8it,
   m8it_popup,
+  m8it_small,
   nexelence,
   nexelence_popup,
   nexelence_popup1,
+  nexelence_small,
   nextlevel_ecom,
+  nextlevel_ecom_small,
   owl,
   postDp,
   psyCRO,
@@ -117,13 +142,16 @@ export {
   psyCRO_popup4,
   psyCRO_popup5,
   psyCRO_popup6,
+  psyCRO_small,
   pult,
+  pult_small,
   react,
   reactQuizApp,
   reactQuizApp1,
   reactQuizApp2,
   reactQuizApp3,
   reactQuizApp4,
+  reactQuizApp_small,
   relume,
   review1,
   review1_small,
@@ -136,12 +164,14 @@ export {
   review_louise,
   review_louise_small,
   schaeferundfriends,
+  schaeferundfriends_small,
   slube,
   splidejs,
   tailwind,
   transparentDp,
   webartist,
   webartist_popup,
+  webartist_small,
   webartistpopup_small,
   webflow,
 };

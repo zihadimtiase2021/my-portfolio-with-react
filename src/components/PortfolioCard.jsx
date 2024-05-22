@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 const PortfolioCard = ({ setModal, newPortfolioItems }) => {
   return (
     <>
@@ -14,6 +15,7 @@ const PortfolioCard = ({ setModal, newPortfolioItems }) => {
               <img
                 className="w-full h-auto rounded-lg transition-all duration-300 "
                 src={img}
+                // data-src={img}
                 width="344"
                 height="224.52"
                 alt="portfolio"
