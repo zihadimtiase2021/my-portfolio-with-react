@@ -40,12 +40,11 @@ const Feed = () => {
           DP,
           DpPlaceholder,
           placeholder,
-          reviewImg,
-          date,
-          timeIcon,
+          src,
           linkIcon,
           link,
           content,
+          isVideo,
         } = item;
 
         return (
@@ -71,10 +70,10 @@ const Feed = () => {
                 <a className="font-bold text-lg" href="#">
                   Zihad Imtiase
                 </a>
-                <p className="text-myGray flex items-center ">
+                {/* <p className="text-myGray flex items-center ">
                   {date}
                   {timeIcon}
-                </p>
+                </p> */}
               </div>
             </div>
             {/* <!-- post-header-end --> */}
@@ -87,14 +86,34 @@ const Feed = () => {
               {/* <div
                 className={`blur-load bg-[url(/src/assets/img/review/small.png)] `}
               > */}
-              <div className="overflow-hidden">
+
+              {isVideo ? (
+                // video
+                <div className="overflow-hidden">
+                  <video controls autoPlay>
+                    <source src={src} type="video/mp4" />
+                  </video>
+                </div>
+              ) : (
+                // image
+                <div className="overflow-hidden">
+                  <img
+                    className="w-full h-auto object-center object-cover "
+                    src={placeholder}
+                    data-src={src}
+                    alt="review"
+                  />
+                </div>
+              )}
+
+              {/* <div className="overflow-hidden">
                 <img
                   className="w-full h-auto object-center object-cover "
                   src={placeholder}
-                  data-src={reviewImg}
+                  data-src={src}
                   alt="review"
                 />
-              </div>
+              </div> */}
               {/* </div> */}
               {/* <!-- post-image end --> */}
             </div>

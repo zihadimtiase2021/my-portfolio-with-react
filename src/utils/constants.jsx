@@ -12,13 +12,13 @@ import {
 } from "react-icons/fa6";
 import { SiFiverr, SiLinkedin } from "react-icons/si";
 import {
-  aboutImg,
   aboutImg_small,
   adslab,
   adslab_small,
   bootstrap,
   css,
   dp,
+  dpWIthoutyBg,
   dp_small,
   drohne112_webflow,
   drohne112_webflow_small,
@@ -79,6 +79,7 @@ import {
   review4,
   review5,
   review5_small,
+  reviewVideo,
   review_louise,
   review_louise_small,
   schaeferundfriends,
@@ -124,7 +125,7 @@ export const filteringNav = [
 
 export const about = [
   {
-    img: aboutImg,
+    img: dpWIthoutyBg,
     aboutImgPlaceHolder: aboutImg_small,
   },
   [
@@ -184,7 +185,19 @@ export const reviews = [
   {
     DP: dp,
     DpPlaceholder: dp_small,
-    reviewImg: review_louise,
+    src: reviewVideo,
+    placeholder: review_louise_small,
+    isVideo: true,
+    date: "16 Jan 2024·",
+    timeIcon: <BiWorld />,
+    linkIcon: <FaLink />,
+    link: "https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/",
+    content: `Don’t just take our word for it. Listen to what our clients have to say about their experience with us!`,
+  },
+  {
+    DP: dp,
+    DpPlaceholder: dp_small,
+    src: review_louise,
     placeholder: review_louise_small,
     date: "16 Jan 2024·",
     timeIcon: <BiWorld />,
@@ -195,7 +208,7 @@ export const reviews = [
   {
     DP: dp,
     DpPlaceholder: dp_small,
-    reviewImg: review5,
+    src: review5,
     placeholder: review5_small,
     date: "01 August 2023·",
     timeIcon: <BiWorld />,
@@ -206,7 +219,7 @@ export const reviews = [
   {
     DP: dp,
     DpPlaceholder: dp_small,
-    reviewImg: review1,
+    src: review1,
     placeholder: review1_small,
     date: "14 February 2023·",
     timeIcon: <BiWorld />,
@@ -217,7 +230,7 @@ export const reviews = [
   {
     DP: dp,
     DpPlaceholder: dp_small,
-    reviewImg: review2,
+    src: review2,
     placeholder: review1_small,
     date: "30 December 2022·",
     timeIcon: <BiWorld />,
@@ -228,7 +241,7 @@ export const reviews = [
   {
     DP: dp,
     DpPlaceholder: dp_small,
-    reviewImg: review3,
+    src: review3,
     placeholder: review1_small,
     date: "21 December 2022·",
     timeIcon: <BiWorld />,
@@ -239,7 +252,7 @@ export const reviews = [
   {
     DP: dp,
     DpPlaceholder: dp_small,
-    reviewImg: review4,
+    src: review4,
     placeholder: review1_small,
     date: "30 October 2022·",
     timeIcon: <BiWorld />,

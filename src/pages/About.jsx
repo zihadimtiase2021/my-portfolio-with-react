@@ -34,9 +34,9 @@ const About = () => {
         <div className="flex justify-center mx-4 md:w-1/3">
           <div className="h-[360px] sticky top-20">
             <div className="relative w-60">
-              <div className="overflow-hidden">
+              <div className="overflow-hidden rotate-[5deg]">
                 <img
-                  className="w-full rounded-lg rotate-[5deg]"
+                  className="w-full rounded-lg "
                   src={about[0].aboutImgPlaceHolder}
                   data-src={about[0].img}
                   loading="lazy"

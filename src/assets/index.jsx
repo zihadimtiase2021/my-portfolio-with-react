@@ -38,6 +38,7 @@ import splidejs from "./img/icons/splide.svg";
 import tailwind from "./img/icons/tailwind.svg";
 import webflow from "./img/icons/webflow-logo.svg";
 import dp from "./img/new-dp2.webp";
+import dpWIthoutyBg from "./img/new.png";
 import adslab_small from "./img/placeHolderImages/adslab_small.webp";
 import coverPhoto_small from "./img/placeHolderImages/cover-photo-small.webp";
 import drohne112_webflow_small from "./img/placeHolderImages/drohne112_webflow_small.webp";
@@ -84,6 +85,7 @@ import reactQuizApp4 from "./img/portfolio/reactQuizApp4.webp";
 import schaeferundfriends from "./img/portfolio/schaeferundfriends.webp";
 import webartist from "./img/portfolio/webartist.webp";
 import postDp from "./img/post-dp.png";
+import reviewVideo from "./img/review/review-video.mp4";
 import review2 from "./img/review/review2.webp";
 import review3 from "./img/review/review3.webp";
 import review4 from "./img/review/review4.webp";
@@ -105,6 +107,7 @@ export {
   css,
   dp,
   dp2,
+  dpWIthoutyBg,
   dp_small,
   drohne112,
   drohne112_popup,
@@ -173,6 +176,7 @@ export {
   review5,
   review5_small,
   reviewDP,
+  reviewVideo,
   review_louise,
   review_louise_small,
   schaeferundfriends,
