@@ -38,7 +38,7 @@ import splidejs from "./img/icons/splide.svg";
 import tailwind from "./img/icons/tailwind.svg";
 import webflow from "./img/icons/webflow-logo.svg";
 import dp from "./img/new-dp2.webp";
-import dpWIthoutyBg from "./img/new.png";
+import dpWIthoutyBg from "./img/new.webp";
 import adslab_small from "./img/placeHolderImages/adslab_small.webp";
 import coverPhoto_small from "./img/placeHolderImages/cover-photo-small.webp";
 import drohne112_webflow_small from "./img/placeHolderImages/drohne112_webflow_small.webp";

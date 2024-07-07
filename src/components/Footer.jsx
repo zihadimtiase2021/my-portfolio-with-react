@@ -13,8 +13,8 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="my-container">
-      <div className="flex flex-col items-center py-8">
+    <section className="my-container">
+      <footer className="flex flex-col items-center py-8">
         {/* <!-- icon-parent --> */}
 
         <div className="flex mb-4">
@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="text-base flex items-center gap-2">
           <p className="text-center">
             ©️<span ref={timeRef}>copyright time</span> Copyright by Web Banai |
-            Developed by {""}
+            Deisgn & Developed by <br />
             <a
               href="https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/"
               target="_blank"
@@ -48,8 +48,8 @@ const Footer = () => {
             </a>
           </p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </section>
   );
 };
 export default Footer;

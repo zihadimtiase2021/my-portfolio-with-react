@@ -94,11 +94,9 @@ import {
 } from "../assets";
 
 export const slogan = [
-  "Talks about #frontend web development, #react.js,  #landingpage, #webdesigning, #webdesignservices, and #conversionrateoptimization",
+  "Talks about #frontend web development, #Webflow, #react.js,  #landingpage, #webdesigning, #webdesignservices, and #conversionrateoptimization",
 ];
-export const title = [
-  "Coding the Future of Your Business | Frontend Web Developer | Web Developer",
-];
+export const title = ["Frontend Web Developer | Webflow Developer"];
 export const status = [
   { icon: <FaBriefcase />, text: "Available" },
   {

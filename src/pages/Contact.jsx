@@ -38,7 +38,10 @@ const Contact = () => {
           {/* <!-- item --> */}
           <div className="flex items-center gap-4  mb-3">
             <FaPhone className="text-gray-500 text-lg" />
-            <a href="tel:+8801728964769" className="text-themeColor">
+            <a
+              href="tel:+8801728964769"
+              className="text-themeColor hover:underline hover:text-secondThemeColor"
+            >
               +880 1728-964769
             </a>
           </div>
@@ -50,7 +53,7 @@ const Contact = () => {
             <a
               target="_blank"
               href="https://wa.me/01728964769"
-              className="text-themeColor"
+              className="text-themeColor hover:underline hover:text-secondThemeColor"
               rel="noreferrer"
             >
               +880 1728-964769
@@ -60,7 +63,10 @@ const Contact = () => {
           {/* <!-- item --> */}
           <div className="flex items-center gap-4  mb-3">
             <FaAt className="text-gray-500 text-lg" />
-            <a href="mailto:zdimtiase@gmail.com" className="text-themeColor">
+            <a
+              href="mailto:zdimtiase@gmail.com"
+              className="text-themeColor hover:underline hover:text-secondThemeColor"
+            >
               zdimtiase@gmail.com
             </a>
           </div>
@@ -68,7 +74,10 @@ const Contact = () => {
           {/* <!-- item --> */}
           <div className="flex items-center gap-4  mb-3">
             <FaFacebookF className="text-gray-500 text-lg" />
-            <a href="#" className="text-themeColor">
+            <a
+              href="#"
+              className="text-themeColor hover:underline hover:text-secondThemeColor"
+            >
               fb.com/zihad.imtiase.munna.2021
             </a>
           </div>

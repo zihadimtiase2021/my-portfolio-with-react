@@ -90,7 +90,7 @@ const Feed = () => {
               {isVideo ? (
                 // video
                 <div className="overflow-hidden">
-                  <video width="768px" controls autoPlay>
+                  <video width="768px" controls autoPlay muted>
                     <source src={src} type="video/mp4" />
                   </video>
                 </div>
