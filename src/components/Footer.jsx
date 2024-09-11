@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
+import Cta from "../components/Cta";
 import { footerLinks } from "../utils/constants";
-
 const Footer = () => {
   const timeRef = useRef();
 
@@ -14,6 +14,9 @@ const Footer = () => {
 
   return (
     <section className="my-container">
+      {/* cta component  */}
+      <Cta />
+      {/* cta component end */}
       <footer className="flex flex-col items-center py-8">
         {/* <!-- icon-parent --> */}
 

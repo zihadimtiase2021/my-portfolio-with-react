@@ -1,4 +1,6 @@
+import adslab_popup from "./img/Portfolio-popup/adslab.webp";
 import drohne112_popup from "./img/Portfolio-popup/drohne112popup.webp";
+import ecom_popup from "./img/Portfolio-popup/ecom.png";
 import glowUpMd_popup from "./img/Portfolio-popup/glowUpMdPopup.webp";
 import graphicsfreak_popup from "./img/Portfolio-popup/graphicsfreakpopup.webp";
 import m3t_konfiguration_popup from "./img/Portfolio-popup/m3t-konfiguratorpopup.webp";
@@ -18,6 +20,7 @@ import pultPopup2 from "./img/Portfolio-popup/pultPopup2.webp";
 import pultPopup3 from "./img/Portfolio-popup/pultPopup3.webp";
 import pultPopup4 from "./img/Portfolio-popup/pultPopup4.webp";
 import pultPopup5 from "./img/Portfolio-popup/pultPopup5.webp";
+import schea_popup from "./img/Portfolio-popup/schea.webp";
 import webartist_popup from "./img/Portfolio-popup/webartistpopup.webp";
 import aboutImg from "./img/ahh.jpg";
 import coverPhoto from "./img/cover-photo.webp";
@@ -35,6 +38,7 @@ import owl from "./img/icons/owl.webp";
 import react from "./img/icons/react.svg";
 import relume from "./img/icons/relume.png";
 import splidejs from "./img/icons/splide.svg";
+import swiperJs from "./img/icons/swiper-logo.svg";
 import tailwind from "./img/icons/tailwind.svg";
 import webflow from "./img/icons/webflow-logo.svg";
 import dp from "./img/new-dp2.webp";
@@ -64,6 +68,8 @@ import aboutImg_small from "./img/placeHolderImages/small-about.webp";
 import dp_small from "./img/placeHolderImages/small-new-dp2.webp";
 import webartist_small from "./img/placeHolderImages/webartist_small.webp";
 import webartistpopup_small from "./img/placeHolderImages/webartistpopup_small.webp";
+import demo3 from "./img/portfolio/03.png";
+import demo4 from "./img/portfolio/04.png";
 import nexelence from "./img/portfolio/Nexelence.webp";
 import slube from "./img/portfolio/Slube.webp";
 import adslab from "./img/portfolio/adslab.webp";
@@ -99,20 +105,24 @@ export {
   aboutImg,
   aboutImg_small,
   adslab,
+  adslab_popup,
   adslab_small,
   bootstrap,
   clientFirst,
   coverPhoto,
   coverPhoto_small,
   css,
+  demo3,
+  demo4,
   dp,
   dp2,
-  dpWIthoutyBg,
   dp_small,
+  dpWIthoutyBg,
   drohne112,
   drohne112_popup,
   drohne112_webflow,
   drohne112_webflow_small,
+  ecom_popup,
   fsAttribute,
   glowUpMd,
   glowUpMd_popup,
@@ -153,13 +163,13 @@ export {
   psyCRO_popup6,
   psyCRO_small,
   pult,
+  pult_small,
   pultPopup,
   pultPopup1,
   pultPopup2,
   pultPopup3,
   pultPopup4,
   pultPopup5,
-  pult_small,
   react,
   reactQuizApp,
   reactQuizApp1,
@@ -175,14 +185,16 @@ export {
   review4,
   review5,
   review5_small,
-  reviewDP,
-  reviewVideo,
   review_louise,
   review_louise_small,
+  reviewDP,
+  reviewVideo,
   schaeferundfriends,
   schaeferundfriends_small,
+  schea_popup,
   slube,
   splidejs,
+  swiperJs,
   tailwind,
   transparentDp,
   webartist,
