@@ -85,6 +85,7 @@ import {
   reviewVideo,
   review_louise,
   review_louise_small,
+  review_xman,
   schaeferundfriends,
   schaeferundfriends_small,
   schea_popup,
@@ -193,8 +194,19 @@ export const reviews = [
     date: "16 Jan 2024·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
-    link: "https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/",
-    content: `Don’t just take our word for it. Listen to what our clients have to say about their experience with us!`,
+    link: "https://www.linkedin.com/in/zihadthewebwizard",
+    content: `Don’t just take my word for it. Listen to what my clients have to say about their experience with me!`,
+  },
+  {
+    DP: dp,
+    DpPlaceholder: dp_small,
+    src: review_xman,
+    placeholder: review_louise_small,
+    date: "16 Jan 2024·",
+    timeIcon: <BiWorld />,
+    linkIcon: <FaLink />,
+    link: "https://www.fiverr.com/webwizard_zihad",
+    content: `This review just made my day!😊 Huge thanks to my client for the amazing feedback.`,
   },
   {
     DP: dp,
@@ -204,7 +216,7 @@ export const reviews = [
     date: "16 Jan 2024·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
-    link: "https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/",
+    link: "https://www.fiverr.com/webwizard_zihad",
     content: `Working with Louise M was a pleasure. Excellent communication, professionalism, and a shared commitment to quality made our collaboration outstanding.`,
   },
   {
@@ -215,7 +227,7 @@ export const reviews = [
     date: "01 August 2023·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
-    link: "https://www.linkedin.com/in/zihad-imtiase-the-web-wizard-41a62b289/",
+    link: "https://www.linkedin.com/in/zihadthewebwizard",
     content: `"🎉 Happy Client, Happy Me! 🌟 Just received the most amazing feedback from one of my client, and I couldn't be more thrilled! 🙌💖"`,
   },
   {
@@ -226,8 +238,10 @@ export const reviews = [
     date: "14 February 2023·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
-    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
-    content: `"It's always a joy to receive feedback from happy clients like you! I am thrilled that I could meet your expectations and provide you with a great experience. Thank you for your trust and support, and I look forward to serving you again soon!"`,
+    link: "https://www.linkedin.com/in/zihadthewebwizard",
+    content: `
+    Are you confused by the name "Nur Zahan B" in the review ❓❓
+    "Nur Zahan B" is actually my mother's name, I was too young for NID (National Identity Card) when I started, so I didn't have NID card, so I opened account in my mother's name.`,
   },
   {
     DP: dp,
@@ -237,8 +251,9 @@ export const reviews = [
     date: "30 December 2022·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
-    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
-    content: `"I am thrilled to have delivered the results you were looking for and to have helped you achieve your project goals. Thank you for your positive feedback. I am look forward to working with you again in the future!"`,
+    link: "https://www.linkedin.com/in/zihadthewebwizard",
+    content: `Are you confused by the name "Nur Zahan B" in the review ❓❓ 
+    "Nur Zahan B" is actually my mother's name, I was too young for NID(National Identity Card) when I started, so I didn't have NID card, so I opened account in my mother's name.`,
   },
   {
     DP: dp,
@@ -248,8 +263,9 @@ export const reviews = [
     date: "21 December 2022·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
-    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
-    content: `"I love working with clients like you who appreciate our dedication to providing high-quality freelancer services. Thank you for your trust and for sharing your positive experience with others."`,
+    link: "https://www.linkedin.com/in/zihadthewebwizard",
+    content: `Are you confused by the name "Nur Zahan B" in the review ❓❓ 
+    "Nur Zahan B" is actually my mother's name, I was too young for NID(National Identity Card) when I started, so I didn't have NID card, so I opened account in my mother's name.`,
   },
   {
     DP: dp,
@@ -259,8 +275,9 @@ export const reviews = [
     date: "30 October 2022·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
-    link: "https://www.freelancer.com.bd/u/nurzahanbegum2",
-    content: `"Another happy client, another reason to celebrate! Thank you for your kind words and for trusting. I am thrilled to have exceeded your expectations!"`,
+    link: "https://www.linkedin.com/in/zihadthewebwizard",
+    content: `Are you confused by the name "Nur Zahan B" in the review ❓❓ 
+    "Nur Zahan B" is actually my mother's name, I was too young for NID(National Identity Card) when I started, so I didn't have NID card, so I opened account in my mother's name.`,
   },
 ];
 

@@ -82,7 +82,10 @@ const Feed = () => {
               {/* <!-- post-content --> */}
               <div className="mb-[14px]">
                 {/* <!-- post-image & caption --> */}
-                <p className="mb-4 px-4 text-sm md:text-base md:px-6">
+                <p
+                  className="mb-4 px-4 text-sm md:text-base md:px-6"
+                  style={{ whiteSpace: "pre-line" }}
+                >
                   {content}
                 </p>
                 {/* <div
@@ -108,15 +111,6 @@ const Feed = () => {
                   </div>
                 )}
 
-                {/* <div className="overflow-hidden">
-                <img
-                  className="w-full h-auto object-center object-cover "
-                  src={placeholder}
-                  data-src={src}
-                  alt="review"
-                />
-              </div> */}
-                {/* </div> */}
                 {/* <!-- post-image end --> */}
               </div>
               {/* <!-- post-content end --> */}

@@ -98,6 +98,7 @@ import review4 from "./img/review/review4.webp";
 import review5 from "./img/review/review5.webp";
 import review_louise from "./img/review/review_louise.webp";
 import review1 from "./img/review/reviwe1.webp";
+import review_xman from "./img/review/xman.webp";
 import transparentDp from "./img/transparent-dp.png";
 import logo from "./img/web-banai-logo.webp";
 
@@ -187,6 +188,7 @@ export {
   review5_small,
   review_louise,
   review_louise_small,
+  review_xman,
   reviewDP,
   reviewVideo,
   schaeferundfriends,
