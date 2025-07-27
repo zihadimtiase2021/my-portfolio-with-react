@@ -14,17 +14,16 @@ const Feed = () => {
   useEffect(() => {
     setparams("feed");
 
-    // Fetch data from your Netlify function
     fetch("/.netlify/functions/webflowProxy")
       .then(res => {
         if (!res.ok) throw new Error("Failed to fetch Webflow data");
         return res.json();
       })
       .then(data => {
-        console.log("📦 Webflow API Response:", data); // Just log for now
+        console.log("Webflow API Response:", data);
       })
       .catch(err => {
-        console.error("❌ Error calling Webflow function:", err);
+        console.error("Error calling function:", err);
       });
   }, [setparams]);
 

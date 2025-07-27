@@ -1,3 +1,5 @@
+// netlify/functions/webflowProxy.js
+
 import { WebflowClient } from "webflow-api";
 
 export async function handler(event, context) {
@@ -6,27 +8,24 @@ export async function handler(event, context) {
   if (!token) {
     return {
       statusCode: 500,
-      body: JSON.stringify({
-        error: "WEBFLOW_API_TOKEN is not set in env vars",
-      }),
+      body: JSON.stringify({ error: "WEBFLOW_API_TOKEN is not set" }),
     };
   }
 
   const webflow = new WebflowClient({ accessToken: token });
 
   try {
-    // Example: get list of sites
     const sites = await webflow.sites.list();
 
-    // You can return whatever you want here, e.g. the sites data
     return {
       statusCode: 200,
       body: JSON.stringify(sites),
     };
-  } catch (error) {
+  } catch (err) {
+    console.error("Webflow error:", err);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.message || "Unknown error" }),
+      body: JSON.stringify({ error: err.message || "Unknown error" }),
     };
   }
 }
