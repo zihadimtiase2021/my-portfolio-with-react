@@ -129,7 +129,7 @@ const Feed = () => {
     //     })}
     //   </div>
     // </>
-    Testimonials
+    <Testimonials />
   );
 };
 
