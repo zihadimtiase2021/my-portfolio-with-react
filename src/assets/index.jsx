@@ -68,6 +68,7 @@ import aboutImg_small from "./img/placeHolderImages/small-about.webp";
 import dp_small from "./img/placeHolderImages/small-new-dp2.webp";
 import webartist_small from "./img/placeHolderImages/webartist_small.webp";
 import webartistpopup_small from "./img/placeHolderImages/webartistpopup_small.webp";
+import xman_small from "./img/placeHolderImages/xman_small.webp";
 import demo3 from "./img/portfolio/03.png";
 import demo4 from "./img/portfolio/04.png";
 import nexelence from "./img/portfolio/Nexelence.webp";
@@ -99,6 +100,7 @@ import review5 from "./img/review/review5.webp";
 import review_louise from "./img/review/review_louise.webp";
 import review1 from "./img/review/reviwe1.webp";
 import review_xman from "./img/review/xman.webp";
+import review_xman2 from "./img/review/xman2.webp";
 import transparentDp from "./img/transparent-dp.png";
 import logo from "./img/web-banai-logo.webp";
 
@@ -189,6 +191,7 @@ export {
   review_louise,
   review_louise_small,
   review_xman,
+  review_xman2,
   reviewDP,
   reviewVideo,
   schaeferundfriends,
@@ -204,4 +207,5 @@ export {
   webartist_small,
   webartistpopup_small,
   webflow,
+  xman_small,
 };

@@ -96,6 +96,7 @@ import {
   webartist_popup,
   webartist_small,
   webflow,
+  xman_small,
 } from "../assets";
 
 export const slogan = [
@@ -201,7 +202,7 @@ export const reviews = [
     DP: dp,
     DpPlaceholder: dp_small,
     src: review_xman,
-    placeholder: review_louise_small,
+    placeholder: xman_small,
     date: "16 Jan 2024·",
     timeIcon: <BiWorld />,
     linkIcon: <FaLink />,
