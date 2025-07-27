@@ -13,6 +13,7 @@ export async function handler(event, context) {
   );
 
   if (!response.ok) {
+    console.error("Webflow API error", response.status);
     return {
       statusCode: response.status,
       body: JSON.stringify({ error: "Webflow API error" }),
@@ -20,6 +21,7 @@ export async function handler(event, context) {
   }
 
   const data = await response.json();
+  console.log("Webflow API data:", data); // Log API response on server (Netlify logs)
 
   return {
     statusCode: 200,
