@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+export default async function getTestimonials(req, res) {
   const API_TOKEN = import.meta.env.TESTIMONIAL_API_TOKEN;
   const COLLECTION_ID = import.meta.env.TESTIMONIAL_COLLECTION_ID;
 
