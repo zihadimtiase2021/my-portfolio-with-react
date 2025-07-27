@@ -3,7 +3,7 @@ export async function handler(event, context) {
   const COLLECTION_ID = process.env.TESTIMONIAL_COLLECTION_ID;
 
   const response = await fetch(
-    `https://api.webflow.com/collections/${COLLECTION_ID}/items`,
+    `https://api.webflow.com/collections/${COLLECTION_ID}`,
     {
       headers: {
         Authorization: `Bearer ${API_TOKEN}`,
