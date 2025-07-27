@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 
+import { WebflowClient } from "webflow-api";
 import { useGlobalContext } from "../context/appContext";
 import useLazyLoadImages from "../customHooks/useLazyLoadImages";
 import { reviews } from "../utils/constants";
-
 const Feed = () => {
   const { setparams } = useGlobalContext();
 
@@ -14,6 +14,20 @@ const Feed = () => {
   useEffect(() => {
     setparams("feed");
   }, [setparams]);
+
+  useEffect(() => {
+    const token = import.meta.env.VITE_WEBFLOW_TESTIMONIAL_KEY;
+    const webflow = new WebflowClient({ accessToken: token });
+
+    (async () => {
+      try {
+        const sites = await webflow.sites.list();
+        console.log(sites);
+      } catch (error) {
+        console.error("Error fetching sites:", error);
+      }
+    })();
+  });
 
   // useEffect(() => {
   //   const blurDivs = document.querySelectorAll(".blur-load");
