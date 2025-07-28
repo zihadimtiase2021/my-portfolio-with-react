@@ -12,6 +12,12 @@ const Test = () => {
         const res = await fetch(
           `/.netlify/functions/fetchCmsItems?collectionId=${collectionId}`
         );
+
+        const contentType = res.headers.get("content-type");
+        if (!contentType || !contentType.includes("application/json")) {
+          throw new Error("Invalid response format (expected JSON)");
+        }
+
         const data = await res.json();
 
         if (res.ok) {
@@ -20,8 +26,8 @@ const Test = () => {
           setError(data.error || "Failed to fetch data");
         }
       } catch (err) {
-        console.error("Fetch Error:", err);
-        setError(err.message);
+        console.error("Fetch Error:", err.message);
+        setError(err.message || "Something went wrong");
       }
     };
 
