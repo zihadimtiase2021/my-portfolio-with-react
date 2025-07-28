@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 
-import Test from "../components/test";
+import Testimonial from "../components/testimonial";
 import { useGlobalContext } from "../context/appContext";
 import useLazyLoadImages from "../customHooks/useLazyLoadImages";
 
@@ -10,22 +10,6 @@ const Feed = () => {
   const containerRef = useRef();
 
   useLazyLoadImages(containerRef);
-
-  useEffect(() => {
-    setparams("feed");
-
-    fetch("/.netlify/functions/webflowProxy")
-      .then(res => {
-        if (!res.ok) throw new Error("Failed to fetch Webflow data");
-        return res.json();
-      })
-      .then(data => {
-        console.log("Webflow API Response:", data);
-      })
-      .catch(err => {
-        console.error("Error calling function:", err);
-      });
-  }, [setparams]);
 
   // useEffect(() => {
   //   const blurDivs = document.querySelectorAll(".blur-load");
@@ -47,7 +31,7 @@ const Feed = () => {
   // });
 
   return (
-    <Test />
+    <Testimonial />
     // <>
     //   <div ref={containerRef} className="flex flex-col gap-8">
     //     {reviews.map((item, index) => {
