@@ -36,7 +36,7 @@ const Test = () => {
       {cmsItems.length > 0 && (
         <ul>
           {cmsItems.map(item => (
-            <li key={item._id}>
+            <li key={item.cmsLocaleId}>
               <strong>{item.name}</strong>
               <br />
               <small>Slug: {item.slug}</small>
