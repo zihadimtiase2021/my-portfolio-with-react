@@ -10,7 +10,7 @@ const Test = () => {
       try {
         const res = await fetch("/.netlify/functions/fetchCmsItems");
         const data = await res.json();
-
+        console.log(data);
         if (data.items) {
           setCmsItems(data.items);
         } else {
