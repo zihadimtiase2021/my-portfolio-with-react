@@ -10,7 +10,7 @@ const Test = () => {
       try {
         const res = await fetch("/.netlify/functions/fetchCmsItems");
         const data = await res.json();
-        console.log(data);
+
         if (data.items) {
           setCmsItems(data.items);
         } else {
@@ -36,7 +36,7 @@ const Test = () => {
       {cmsItems.length > 0 && (
         <ul>
           {cmsItems.map(item => (
-            <li key={item.cmsLocaleId}>
+            <li key={item._id}>
               <strong>{item.name}</strong>
               <br />
               <small>Slug: {item.slug}</small>
