@@ -14,8 +14,6 @@ const Test = () => {
         );
         const data = await res.json();
 
-        console.log("Fetched Webflow CMS Data:", data);
-
         if (res.ok) {
           setItems(data.items || []);
         } else {
@@ -29,6 +27,8 @@ const Test = () => {
 
     fetchData();
   }, [collectionId]);
+
+  console.log(items);
 
   return (
     <>
