@@ -1,49 +1,46 @@
 import { useEffect, useState } from "react";
 
 const Test = () => {
-  const [cmsItems, setCmsItems] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [items, setItems] = useState([]);
   const [error, setError] = useState(null);
 
+  const collectionId = "6886ecb0620916f902732c1f"; // 🔄 change this when needed
+
   useEffect(() => {
-    const fetchCMSItems = async () => {
+    const fetchData = async () => {
       try {
-        const res = await fetch("/.netlify/functions/fetchCmsItems");
+        const res = await fetch(
+          `/.netlify/functions/fetchCmsItems?collectionId=${collectionId}`
+        );
         const data = await res.json();
 
-        if (data.items) {
-          setCmsItems(data.items);
+        console.log("Fetched Webflow CMS Data:", data);
+
+        if (res.ok) {
+          setItems(data.items || []);
         } else {
-          setError("No items found");
+          setError(data.error || "Failed to fetch data");
         }
       } catch (err) {
-        setError("Failed to fetch CMS data");
-      } finally {
-        setLoading(false);
+        console.error("Fetch Error:", err);
+        setError(err.message);
       }
     };
 
-    fetchCMSItems();
-  }, []);
+    fetchData();
+  }, [collectionId]);
 
   return (
-    <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-      <h2>Webflow CMS Live Data</h2>
-
-      {loading && <p>Loading...</p>}
-      {error && <p style={{ color: "red" }}>{error}</p>}
-
-      {cmsItems.length > 0 && (
-        <ul>
-          {cmsItems.map(item => (
-            <li key={item._id}>
-              <strong>{item.name}</strong>
-              <br />
-              <small>Slug: {item.slug}</small>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div style={{ padding: "20px" }}>
+      <h1>Webflow CMS Items</h1>
+      {error && <p style={{ color: "red" }}>Error: {error}</p>}
+      <ul>
+        {items.map(item => (
+          <li key={item._id}>
+            <strong>{item.name || item.slug || "Untitled Item"}</strong>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

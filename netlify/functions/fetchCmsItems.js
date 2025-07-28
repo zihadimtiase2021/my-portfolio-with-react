@@ -1,9 +1,21 @@
+// netlify/functions/fetchCmsItems.js
 const axios = require("axios");
 
-exports.handler = async () => {
+exports.handler = async event => {
+  const { collectionId } = event.queryStringParameters;
+
+  if (!collectionId) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        error: "Missing collectionId in query parameters.",
+      }),
+    };
+  }
+
   try {
     const response = await axios.get(
-      "https://api.webflow.com/v2/collections/6886ecb0620916f902732c1f/items",
+      `https://api.webflow.com/v2/collections/${collectionId}/items`,
       {
         headers: {
           Authorization: `Bearer 29baafbfa63ca26e262efd9b191ed8e89fa15654dbf1e712c0b636040da3a10c`,
