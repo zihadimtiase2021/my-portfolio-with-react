@@ -9,13 +9,11 @@ const Testimonial = () => {
   useEffect(() => {
     const loadData = async () => {
       const data = await fetchCmsData(collectionId);
-      console.log(data);
       setTestimonials(data);
     };
 
     loadData();
   }, []);
-  console.log(testimonials);
 
   return <div>testimonial</div>;
 };
