@@ -31,17 +31,15 @@ const Test = () => {
   }, [collectionId]);
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Webflow CMS Items</h1>
-      {error && <p style={{ color: "red" }}>Error: {error}</p>}
-      <ul>
-        {items.map(item => (
-          <li key={item._id}>
+    <>
+      {items.map(item => {
+        return (
+          <li key={item.id}>
             <strong>{item.name || item.slug || "Untitled Item"}</strong>
           </li>
-        ))}
-      </ul>
-    </div>
+        );
+      })}
+    </>
   );
 };
 
