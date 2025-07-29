@@ -31,7 +31,9 @@ const Feed = () => {
   // });
 
   return (
-    <Testimonial />
+    <div ref={containerRef} className="flex flex-col gap-8">
+      <Testimonial />
+    </div>
     // <>
     //   <div ref={containerRef} className="flex flex-col gap-8">
     //     {reviews.map((item, index) => {
