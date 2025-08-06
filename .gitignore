@@ -28,3 +28,6 @@ dist-ssr
 
 # Environment variables
 .env
+
+# Ignore generated assets map so it's not committed
+/src/assetsMap.json

@@ -1,5 +1,6 @@
 import { useRef } from "react";
 
+import TestImage from "../components/TestImage";
 import Testimonial from "../components/testimonial";
 import { useGlobalContext } from "../context/appContext";
 import useLazyLoadImages from "../customHooks/useLazyLoadImages";
@@ -32,6 +33,7 @@ const Feed = () => {
 
   return (
     <div ref={containerRef} className="flex flex-col gap-8">
+      <TestImage />
       <Testimonial />
     </div>
     // <>
