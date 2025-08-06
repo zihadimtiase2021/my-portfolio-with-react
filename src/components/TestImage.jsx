@@ -68,7 +68,7 @@ const TestImage = () => {
 
       {/* Another example: Fetch `banner.webp` from `Banners` folder */}
       <AssetImage
-        folder="Banners"
+        folder="Public"
         displayName="imtiase.svg"
         alt="Homepage Banner"
         className="w-full h-auto rounded shadow"
@@ -76,7 +76,7 @@ const TestImage = () => {
 
       {/* With fallback content */}
       <AssetImage
-        folder="Icons"
+        folder="Public"
         displayName="imtiase.svg"
         alt="Facebook"
         fallback={<p>🔄 Loading Facebook Icon...</p>}
