@@ -5,45 +5,52 @@ const AssetImage = ({
   displayName,
   alt = "",
   className = "",
+  loading = "lazy",
+  fallback = null,
 }) => {
   const [asset, setAsset] = useState(null);
 
   useEffect(() => {
-    const fetchAssetData = async () => {
+    let cancelled = false;
+
+    const fetchAsset = async () => {
       try {
-        const res = await fetch("/.netlify/functions/getAssetUrl", {
+        const res = await fetch("/.netlify/functions/getAssetsUrl", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ folderName: folder, displayName }),
         });
 
         const data = await res.json();
-        console.log(data);
-        if (res.ok && data) {
+
+        if (res.ok && !cancelled) {
           setAsset(data);
         } else {
-          console.warn("❌", data.error);
-          setAsset(null);
+          console.warn("❌ Asset not found:", data.error);
         }
       } catch (err) {
-        console.error("❌ Error fetching image:", err);
-        setAsset(null);
+        console.error("❌ Error fetching asset:", err);
       }
     };
 
-    fetchAssetData();
+    fetchAsset();
+    return () => {
+      cancelled = true;
+    };
   }, [folder, displayName]);
 
-  if (!asset) return <p>Loading image...</p>;
-  const { hostedUrl, altText } = asset;
-  console.log(hostedUrl, altText);
+  if (!asset && fallback) return fallback;
+  if (!asset) return null;
 
   return (
     <img
-      src={hostedUrl}
-      alt={altText || displayName}
+      src={asset.hostedUrl}
+      alt={alt || asset.altText || displayName}
       className={className}
-      loading="lazy"
+      loading={loading}
+      data-id={asset.id}
+      data-size={asset.size}
+      data-type={asset.contentType}
     />
   );
 };

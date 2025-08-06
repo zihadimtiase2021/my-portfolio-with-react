@@ -55,10 +55,34 @@ import AssetImage from "./AssetImage";
 
 const TestImage = () => {
   return (
-    <>
-      <h2>image</h2>
-      <AssetImage folder="Untitled" displayName="Nexelence" className="w-20" />
-    </>
+    <div className="p-4 space-y-4">
+      <h1 className="text-2xl font-bold">Dynamic Webflow Asset Loader 🚀</h1>
+
+      {/* Example: Fetch `logo.svg` from `Public` folder */}
+      <AssetImage
+        folder="Public"
+        displayName="imtiase.svg"
+        alt="Website Logo"
+        className="w-32 h-auto"
+      />
+
+      {/* Another example: Fetch `banner.webp` from `Banners` folder */}
+      <AssetImage
+        folder="Banners"
+        displayName="imtiase.svg"
+        alt="Homepage Banner"
+        className="w-full h-auto rounded shadow"
+      />
+
+      {/* With fallback content */}
+      <AssetImage
+        folder="Icons"
+        displayName="imtiase.svg"
+        alt="Facebook"
+        fallback={<p>🔄 Loading Facebook Icon...</p>}
+        className="w-6 h-6"
+      />
+    </div>
   );
 };
 
