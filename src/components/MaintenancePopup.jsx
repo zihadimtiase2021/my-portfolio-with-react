@@ -46,11 +46,10 @@ const MaintenancePopup = () => {
           <p className="text-gray-700 dark:text-myGray text-sm sm:text-lg md:text-2xl leading-relaxed mb-6 break-words">
             Site is currently under maintenance and will be back online soon.
             In the meantime, feel free to check out my latest projects on.
-            <div className="mt-16 break-all">
+            <div className="mt-6 break-all">
               Linktree:{" "}
               <a
                 href="https://linktr.ee/imtiase"
-                target="_blank"
                 rel="noreferrer"
                 className="font-semibold hover:underline break-all"
                 style={{ color: "#e2a69c" }}
